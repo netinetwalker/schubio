@@ -1,0 +1,112 @@
+/*
+ * Content-Styles
+ */
+
+#content, #blog {
+    color: #612B00;
+}
+ 
+#content h1, #content h2,
+#blog h1, #blog h2 {
+    font-weight: bold;
+}
+
+    #content h1, #blog h1 {
+        font-size: 36px;
+        line-height: 54px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    
+    #content h2, #blog h2 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 42px;
+        margin-bottom: 15px;
+    }
+    
+        #content h2 a, #blog h2 a {
+            color: #612B00;
+            text-decoration: none;
+        }
+ 
+#content p, #blog p {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+    #content p a, #blog p a {
+        color: #612B00;
+    }
+    
+        #content p a:hover, #blog p a:hover {
+            text-decoration: none;
+        }
+        
+#content ul, #content ol,
+#blog ul, #blog ol {
+    margin-top: 15px;
+    padding-left: 50px;
+}
+
+    #content ul, #blog ul {
+        list-style: disc outside;
+    }
+    
+    #content ol, #blog ol {
+        list-style: decimal outside;
+    }
+    
+        #content ol ol, #blog ol ol {
+            list-style-type: lower-latin;
+        }
+    
+        #content ul ul, #content ul ol,
+        #content ol ul, #content ol ol,
+        #blog ul ul, #blog ul ol,
+        #blog ol ul, #blog ol ol {
+            margin-top: 0px;
+            padding-left: 30px;
+        }
+        
+#content .imgLeft, #content .imgRight,
+#blog .imgLeft, #blog .imgRight {
+    background-color: #eae3d8;
+    border: 1px solid #e6ddd0;
+    padding: 10px;
+}
+
+    #content .imgLeft img, #content .imgRight img,
+    #blog .imgLeft img, #blog .imgRight img {
+        display: block;
+    }
+
+    #content .imgLeft,
+    #blog .imgLeft {
+        float: left;
+        margin: 10px 20px;
+    }
+    
+    #content .imgRight,
+    #blog .imgRight {
+        float: right;
+        margin: 10px 0px 10px 20px;
+    }
+    
+#content table,
+#blog table {
+    margin-left: 20px;
+}
+    
+    #content th, #content td,
+    #blog th, #blog td {
+        border: 1px solid #612B00;
+        padding: 1px 4px;
+    }
+
+        #content th,
+        #blog th {
+            background-color: #9c5820;
+            color: #fff;
+            text-align: left;
+        }

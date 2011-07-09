@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Ebene_3"
+   x="0px"
+   y="0px"
+   width="61.563px"
+   height="61.563px"
+   viewBox="0 0 61.563 61.563"
+   enable-background="new 0 0 61.563 61.563"
+   xml:space="preserve"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="icon-diaspora.svg"
+   inkscape:export-filename="/home/dennis/.gvfs/SFTP als www-data auf w.dsx.cc/var/www/infrastructure/fallback/www/dr/styles/images/icons/icon-diaspora-48.png"
+   inkscape:export-xdpi="70.173157"
+   inkscape:export-ydpi="70.173157"><metadata
+   id="metadata9"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs7" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1627"
+   inkscape:window-height="1001"
+   id="namedview5"
+   showgrid="false"
+   inkscape:zoom="4.8893004"
+   inkscape:cx="30.7815"
+   inkscape:cy="30.7815"
+   inkscape:window-x="1024"
+   inkscape:window-y="24"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Ebene_3" />
+<path
+   fill="#9C5820"
+   d="M61.563,30.781c0,17-13.781,30.781-30.781,30.781S0,47.781,0,30.781S13.781,0,30.781,0  S61.563,13.781,61.563,30.781z M50.554,22.453c-1.125-2.658-2.652-4.948-4.584-6.871c-1.916-1.924-4.199-3.45-6.85-4.582  c-2.633-1.132-5.393-1.696-8.283-1.696c-2.909,0-5.698,0.564-8.367,1.696c-2.649,1.132-4.941,2.658-6.875,4.582  c-1.914,1.923-3.442,4.213-4.583,6.871C9.87,25.111,9.3,27.901,9.3,30.825c0,2.921,0.57,5.711,1.712,8.368  c1.141,2.639,2.669,4.908,4.583,6.814c1.934,1.904,4.226,3.424,6.875,4.553c2.669,1.132,5.458,1.698,8.367,1.698  c2.891,0,5.65-0.566,8.283-1.698c2.65-1.129,4.934-2.648,6.85-4.553c1.932-1.906,3.459-4.176,4.584-6.814  c1.139-2.657,1.709-5.447,1.709-8.368C52.263,27.901,51.692,25.111,50.554,22.453 M13.718,30.825c0-2.34,0.441-4.563,1.325-6.675  c0.901-2.131,2.116-3.96,3.646-5.487c1.527-1.526,3.349-2.742,5.467-3.647c2.116-0.905,4.344-1.357,6.682-1.357  c3.094,0,5.945,0.764,8.559,2.29c2.635,1.527,4.713,3.61,6.238,6.249c1.529,2.642,2.297,5.517,2.297,8.628  c0,3.089-0.768,5.955-2.297,8.594c-1.525,2.621-3.604,4.705-6.238,6.252c-2.613,1.524-5.465,2.289-8.559,2.289  c-2.338,0-4.575-0.451-6.71-1.358c-2.117-0.904-3.939-2.121-5.467-3.646c-1.51-1.546-2.716-3.376-3.617-5.486  C14.159,35.357,13.718,33.14,13.718,30.825 M27.926,17.227v8.408l-8.741-2.187l-1.602,6.601l8.25,1.975l-5.089,7.778l5.417,3.868  l5.173-7.819l5.134,7.819l5.416-3.868l-5.172-7.778l8.289-1.975l-1.557-6.601L34.7,25.635v-8.408H27.926"
+   id="path3" />
+</svg>

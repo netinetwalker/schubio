@@ -1,0 +1,18 @@
+package_assets: on
+embed_assets: on
+compress_assets: on
+gzip_assets: off
+
+javascripts:
+  default:
+    - public/javascripts/*
+
+stylesheets:
+  default:
+    - public/stylesheets/reset.css
+    - public/stylesheets/webfonts.css
+    - public/stylesheets/main.css
+    - public/stylesheets/navigation.css
+    - public/stylesheets/cboxes.css
+    - public/stylesheets/content.css
+    - public/stylesheets/blog.css
