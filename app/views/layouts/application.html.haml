@@ -18,9 +18,9 @@
                 blog, projects and nerdiness
             #headerSocialContainer
               #headerSocial
-                = link_to image_tag("/images/icons/icon-twitter-48.png"), "http://twitter.com/denschub", {:target => "_blank", :title => "@denschub auf Twitter"}
-                = link_to image_tag("/images/icons/icon-diaspora-48.png"), "https://pod.geraspora.de/people/12", {:target => "_blank", :title => "Dennis Schubert bei Diaspora"}
-                = link_to image_tag("/images/icons/icon-rss-48.png"), "#", {:target => "_blank", :title => "RSS-Feed des Blogs"}
+                = link_to image_tag("/images/icons/icon-twitter-48.png"), "http://twitter.com/denschub", {:target => "_blank", :class => "twitterIcon", :title => "@denschub auf Twitter"}
+                = link_to image_tag("/images/icons/icon-diaspora-48.png"), "https://pod.geraspora.de/people/12", {:target => "_blank", :class => "diasporaIcon", :title => "Dennis Schubert bei Diaspora"}
+                = link_to image_tag("/images/icons/icon-rss-48.png"), "#", {:target => "_blank", :class => "rssIcon", :title => "RSS-Feed des Blogs"}
         #navBarContainer
           %nav{:id => "navBar"}
             #navBarLeft
