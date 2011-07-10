@@ -1,6 +1,6 @@
 Schubio::Application.routes.draw do
-  get "home/index"
-  
+  match ":pageUrl" => "page#show"  
+    
   root :to => "home#index"
 
   # The priority is based upon order of creation:
