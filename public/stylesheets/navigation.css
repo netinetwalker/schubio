@@ -37,11 +37,11 @@
             width: 32px;
             height: 32px;
             float: left;
-            background: url("images/icons/icon-search-16.png") no-repeat 50% 50% #7b3c0a;
+            background: url("../images/icons/icon-search-16.png") no-repeat 50% 50% #7b3c0a;
         }
         
             #navBarRight #mbTermIcon.execute {
-                background-image: url("images/icons/icon-execute-16.png");
+                background-image: url("../images/icons/icon-execute-16.png");
             }
     
         #navBarRight #mbTerm {

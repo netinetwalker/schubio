@@ -18,3 +18,1727 @@ ActionController::RoutingError (No route matches "/"):
   
 
 Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:00:19 +0200 2011
+
+ActionController::RoutingError (No route matches "/"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:00:46 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:00:53 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:00:53 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/webfonts/didactgothic.ttf" for 88.67.17.211 at Sat Jul 09 22:00:53 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.ttf"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:07:15 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (2.9ms)
+Completed   in 7ms
+
+ActionView::Template::Error (There's no Ruby code for = to evaluate.):
+    20:               %h2{:id => 'siteSlogan'}
+    21:                 blog, projects and nerdiness
+    22:             #headerSocialContainer
+    23:               !=
+    24:                 <div id="headerSocial">
+    25:                   <a href="http://twitter.com/denschub" target="blank" title="@denschub auf Twitter" class="twitterIcon"><img src="styles/images/icons/icon-twitter-48.png" alt="twitter"></a>
+    26:                   <a href="https://pod.geraspora.de/people/12" target="blank" title="denschub@pod.geraspora.de auf Diaspora" class="diasporaIcon"><img src="styles/images/icons/icon-diaspora-48.png" alt="diaspora"></a>
+  app/views/layouts/application.html.haml:23
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:07:38 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (2.9ms)
+Completed   in 7ms
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    21:                 blog, projects and nerdiness
+    22:             #headerSocialContainer
+    23:               <div id="headerSocial">
+    24:                 <a href="http://twitter.com/denschub" target="blank" title="@denschub auf Twitter" class="twitterIcon"><img src="styles/images/icons/icon-twitter-48.png" alt="twitter"></a>
+    25:                 <a href="https://pod.geraspora.de/people/12" target="blank" title="denschub@pod.geraspora.de auf Diaspora" class="diasporaIcon"><img src="styles/images/icons/icon-diaspora-48.png" alt="diaspora"></a>
+    26:                 <a href="#" title="RSS-Feed des Blogs" class="rssIcon"><img src="styles/images/icons/icon-rss-48.png" alt="rss"></a>
+    27:               </div>
+  app/views/layouts/application.html.haml:24
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.4ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:08:14 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (5.1ms)
+Completed   in 9ms
+
+ActionView::Template::Error (Filter "html" is not defined.):
+    20:               %h2{:id => 'siteSlogan'}
+    21:                 blog, projects and nerdiness
+    22:             #headerSocialContainer
+    23:               :html
+    24:                 <div id="headerSocial">
+    25:                   <a href="http://twitter.com/denschub" target="blank" title="@denschub auf Twitter" class="twitterIcon"><img src="styles/images/icons/icon-twitter-48.png" alt="twitter"></a>
+    26:                   <a href="https://pod.geraspora.de/people/12" target="blank" title="denschub@pod.geraspora.de auf Diaspora" class="diasporaIcon"><img src="styles/images/icons/icon-diaspora-48.png" alt="diaspora"></a>
+  app/views/layouts/application.html.haml:23
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:08:50 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (52.9ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:08:50 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:08:50 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:08:50 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:08:51 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:08:51 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:08:51 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:08:51 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:08:51 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/webfonts/didactgothic.ttf" for 88.67.17.211 at Sat Jul 09 22:08:51 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.ttf"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:11:54 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (41.2ms)
+Completed   in 46ms
+
+ActionView::Template::Error (undefined local variable or method `root' for #<#<Class:0x1cf4710>:0x1cf2050>):
+    16:           #header
+    17:             #headerTitleContainer
+    18:               %h1{:id => 'siteName'}
+    19:                 = link_to "Dennis Schubert", root
+    20:               %h2{:id => 'siteSlogan'}
+    21:                 blog, projects and nerdiness
+    22:             #headerSocialContainer
+  app/views/layouts/application.html.haml:19:in `_app_views_layouts_application_html_haml__1745125584_15160060_0'
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:12:05 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:12:06 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:12:06 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:12:06 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:12:07 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:12:07 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:12:07 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:12:07 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:12:07 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/webfonts/didactgothic.ttf" for 88.67.17.211 at Sat Jul 09 22:12:07 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.ttf"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:13:06 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (3.2ms)
+Completed   in 7ms
+
+ActionView::Template::Error (Inconsistent indentation: "    \t\t\t" was used for indentation, but the rest of the document was indented using 2 spaces.):
+    28:                 </div>
+    29:                 
+    30:         :plain        
+    31:     			<div id="navBarContainer">
+    32: 			      <nav id="navBar">
+    33: 			          <div id="navBarLeft">
+    34: 			              <ul>
+  app/views/layouts/application.html.haml:31
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:13:44 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (49.8ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:13:44 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:13:44 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:13:44 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:13:45 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:13:45 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:13:45 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:13:45 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:13:45 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/webfonts/didactgothic.ttf" for 88.67.17.211 at Sat Jul 09 22:13:45 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.ttf"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:15:33 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:15:33 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:15:33 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:15:34 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:15:34 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:15:34 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:15:35 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:15:35 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/stylesheets/images/icons/icon-search-16.png" for 88.67.17.211 at Sat Jul 09 22:15:35 +0200 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/images/icons/icon-search-16.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:15:35 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/webfonts/didactgothic.ttf" for 88.67.17.211 at Sat Jul 09 22:15:35 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.ttf"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:17:11 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (5.2ms)
+Completed   in 10ms
+
+ActionView::Template::Error (Inconsistent indentation: "\t\t\t    " was used for indentation, but the rest of the document was indented using 2 spaces.):
+    46:                   </div>
+    47:                 </form>
+    48:         #contentContainer
+    49: 			    %section{:id => "content"}
+    50: 			      %article{:class => "textpage"}
+    51:               = yield
+  app/views/layouts/application.html.haml:49
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:17:32 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:17:32 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:17:33 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:17:33 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:17:33 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:17:34 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:17:34 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:17:34 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/stylesheets/images/icons/icon-search-16.png" for 88.67.17.211 at Sat Jul 09 22:17:34 +0200 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/images/icons/icon-search-16.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:17:34 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/webfonts/didactgothic.ttf" for 88.67.17.211 at Sat Jul 09 22:17:34 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.ttf"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:21:14 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:21:15 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:21:15 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:21:15 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:21:16 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:21:16 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/stylesheets/images/icons/icon-search-16.png" for 88.67.17.211 at Sat Jul 09 22:21:16 +0200 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/images/icons/icon-search-16.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:21:16 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:21:16 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/webfonts/didactgothic.woff" for 88.67.17.211 at Sat Jul 09 22:21:16 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.woff"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/webfonts/didactgothic.ttf" for 88.67.17.211 at Sat Jul 09 22:21:16 +0200 2011
+
+ActionController::RoutingError (No route matches "/webfonts/didactgothic.ttf"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:26:46 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:26:46 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:26:46 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:26:51 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/styles/images/icons/icon-twitter-48.png" for 88.67.17.211 at Sat Jul 09 22:26:52 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-twitter-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/styles/images/icons/icon-diaspora-48.png" for 88.67.17.211 at Sat Jul 09 22:26:52 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-diaspora-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/icon-rss-48.png" for 88.67.17.211 at Sat Jul 09 22:26:52 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/icon-rss-48.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/stylesheets/images/icons/icon-search-16.png" for 88.67.17.211 at Sat Jul 09 22:26:52 +0200 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/images/icons/icon-search-16.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:28:20 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/images/icons/icon-search-16.png" for 88.67.17.211 at Sat Jul 09 22:28:22 +0200 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/images/icons/icon-search-16.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/stylesheets/images/icons/icon-search-16.png" for 88.67.17.211 at Sat Jul 09 22:29:06 +0200 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/images/icons/icon-search-16.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/stylesheets/images/icons/icon-search-16.png" for 88.67.17.211 at Sat Jul 09 22:29:07 +0200 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/images/icons/icon-search-16.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:29:26 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:35:20 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:36:48 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:37:53 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:38:26 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:39:27 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:39:54 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:40:44 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:42:08 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:54:44 +0200 2011
+  Processing by HomeController#index as HTML
+ERROR: compiling _app_views_layouts_application_html_haml__1745125584_34372440_0 RAISED compile error
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:54: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...:id => "footboxLeft", :class="footerBox")}>\n              <...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:54: syntax error, unexpected ')', expecting '}'
+...tboxLeft", :class="footerBox")}>\n              <nav id=\"fo...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:54: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...Box")}>\n              <nav id=\"footerNavigation\">\n      ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...d => "footboxCenter", :class="footerBox")}>\n              <...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected ')', expecting '}'
+...oxCenter", :class="footerBox")}>\n              <p>\n       ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected $undefined
+...terBox")}>\n              <p>\n                17 Jahre jung...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected $undefined, expecting '}'
+...d mit Sozialleben. Nutzer und\n                Entwickler vo...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected $undefined
+...ler von Open Source-Software.\n                Mitentwickler...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected $undefined
+...entralen sozialen Netzwerkes,\n                Diaspora. Vor...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected $undefined
+...Vorliebe für Webentwicklung.\n              </p>\n         ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: unknown regexp options - ct
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected $undefined
+... </p>\n            </section>\n            <section#{
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...id => "footboxRight", :class="footerBox")}>\n              <...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected ')', expecting '}'
+...boxRight", :class="footerBox")}>\n              <div>\n     ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected $undefined
+...rBox")}>\n              <div>\n              <a href=\"http:...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...  <div>\n              <a href=\"http://creativecommons.org/...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected ',', expecting '}'
+...</div>\n  </body>\n</html>\n", -6, false);::Haml::Util.html_...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected kENSURE, expecting '}'
+...Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected kEND, expecting '}'
+...uffer = @haml_buffer.upper;end;
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:74: syntax error, unexpected kEND, expecting '}'
+Function body:           def _app_views_layouts_application_html_haml__1745125584_34372440_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:preserve=>["textarea", "pre", "code"], :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :format=>:html5, :escape_html=>true, :encoding=>nil, :escape_attrs=>true, :attr_wrapper=>"'"});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset='utf-8'>\n    <title>\n      Yeah.\n    </title>\n    #{_hamlout.adjust_tabs(2); 
+
+
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( include_stylesheets :default, :media => 'all'
+));}\n    #{_hamlout.format_script_false_false_false_true_false_true_false(( include_javascripts :default
+));}\n  </head>\n  <body>\n    <div id='mainContainer'>\n      <div id='main'>\n        <div id='headerContainer'>\n          <div id='header'>\n            <div id='headerTitleContainer'>\n              <h1 id='siteName'>\n                #{_hamlout.adjust_tabs(6); 
+
+
+
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to "Dennis Schubert", root_path
+));}\n              </h1>\n              <h2 id='siteSlogan'>\n                blog, projects and nerdiness\n              </h2>\n            </div>\n            <div id='headerSocialContainer'>\n              <div id=\"headerSocial\">\n                <a href=\"http://twitter.com/denschub\" target=\"blank\" title=\"@denschub auf Twitter\" class=\"twitterIcon\"><img src=\"/images/icons/icon-twitter-48.png\" alt=\"twitter\"></a>\n                <a href=\"https://pod.geraspora.de/people/12\" target=\"blank\" title=\"denschub@pod.geraspora.de auf Diaspora\" class=\"diasporaIcon\"><img src=\"/images/icons/icon-diaspora-48.png\" alt=\"diaspora\"></a>\n                <a href=\"#\" title=\"RSS-Feed des Blogs\" class=\"rssIcon\"><img src=\"/images/icons/icon-rss-48.png\" alt=\"rss\"></a>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div id='navBarContainer'>\n          <nav id='navBar'>\n            <div id='navBarLeft'>\n              <ul>\n                <li><a href=\"http://w.dsx.cc/dr/\">Home</a> | </li>\n                <li><a href=\"http://w.dsx.cc/dr/page.html\">Über mich</a> | </li> \n                <li><a href=\"#\">Projekte</a> | </li>\n                <li><a href=\"http://w.dsx.cc/dr/blog.html\">Blog</a></li>\n              </ul>\n            </div>\n            <div id='navBarRight'>\n              <form method=\"post\" action=\"#\" id=\"magicbar\">\n                <div>\n                  <div id=\"mbTermIcon\">&nbsp;</div>\n                  <input type=\"text\" name=\"searchphrase\" id=\"mbTerm\">\n                  <input type=\"submit\" value=\"Suchen\" id=\"mbSubmit\">\n                </div>\n              </form>\n            </div>\n          </nav>\n        </div>\n        <div id='contentContainer'>\n          <section id='content'>\n            <article class='textpage'>\n              #{_hamlout.adjust_tabs(-1); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( yield
+));}\n            </article>\n          </section>\n        </div>\n        <div id='paginationContainer'>\n          <nav id='pagination'>\n            &nbsp;\n          </nav>\n        </div>\n        <div id='footerContainer'>\n          <footer id='footer'>\n            <section#{_hamlout.adjust_tabs(-1); 
+
+
+
+
+_hamlout.attributes({}, nil, :id => "footboxLeft", :class="footerBox")}>\n              <nav id=\"footerNavigation\">\n                <ul>\n                  <li><a href=\"#\">Home</a></li>\n                  <li><a href=\"#\">Über mich</a></li> \n                  <li><a href=\"#\">Projekte</a></li>\n                  <li><a href=\"#\">Blog</a></li>\n                  <li><a href=\"#\">Impressum</a></li>\n                </ul>\n              </nav>\n            </section>\n            <section#{
+
+
+
+
+
+
+
+
+
+
+_hamlout.attributes({}, nil, :id => "footboxCenter", :class="footerBox")}>\n              <p>\n                17 Jahre junger Nerd mit Sozialleben. Nutzer und\n                Entwickler von Open Source-Software.\n                Mitentwickler eines dezentralen sozialen Netzwerkes,\n                Diaspora. Vorliebe für Webentwicklung.\n              </p>\n            </section>\n            <section#{
+
+
+
+
+
+_hamlout.attributes({}, nil, :id => "footboxRight", :class="footerBox")}>\n              <div>\n              <a href=\"http://creativecommons.org/licenses/by-sa/3.0/deed.de\" title=\"Der Inhalt steht unter einer Creative&nbsp;Commons-Lizenz\" target=\"blank\"><img src=\"styles/images/icons/cc-icon-cc-30.png\" alt=\"CC\"></a>\n              <a href=\"http://creativecommons.org/licenses/by-sa/3.0/deed.de\" title=\"Der Inhalt darf mit Namensnennung weiterverwendet werden\" target=\"blank\"> <img src=\"styles/images/icons/cc-icon-by-30.png\" alt=\"BY\"></a>\n              <a href=\"http://creativecommons.org/licenses/by-sa/3.0/deed.de\" title=\"Die Weitergabe des Inhalts muss unter der gleichen Lizenz erfolgen\" target=\"blank\"> <img src=\"styles/images/icons/cc-icon-sa-30.png\" alt=\"SA\"></a>\n              </div>\n            </section>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n", -6, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:74:in `compile'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_view/template.rb:134:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_view/template.rb:127:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:62:in `_render_template'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:26:in `render_without_haml'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/haml-3.1.2/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:92:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activerecord-3.0.3/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:151:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:440:in `_run__738958071__process_action__199225275__callbacks'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `send'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `send'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:120:in `process'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:40:in `process'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal.rb:138:in `dispatch'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal.rb:178:in `action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/sass-3.1.4/lib/sass/../sass/plugin/rack.rb:54:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:32:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/application.rb:77:in `send'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/handler/webrick.rb:13:in `run'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/server.rb:217:in `start'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/commands/server.rb:65:in `start'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/commands.rb:30
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/commands.rb:27:in `tap'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered home/index.html.haml within layouts/application (37.4ms)
+Completed   in 41ms
+
+ActionView::Template::Error (compile error
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:54: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...:id => "footboxLeft", :class="footerBox")}>\n              <...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:54: syntax error, unexpected ')', expecting '}'
+...tboxLeft", :class="footerBox")}>\n              <nav id=\"fo...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:54: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...Box")}>\n              <nav id=\"footerNavigation\">\n      ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...d => "footboxCenter", :class="footerBox")}>\n              <...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected ')', expecting '}'
+...oxCenter", :class="footerBox")}>\n              <p>\n       ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected $undefined
+...terBox")}>\n              <p>\n                17 Jahre jung...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected $undefined, expecting '}'
+...d mit Sozialleben. Nutzer und\n                Entwickler vo...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected $undefined
+...ler von Open Source-Software.\n                Mitentwickler...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected $undefined
+...entralen sozialen Netzwerkes,\n                Diaspora. Vor...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected $undefined
+...Vorliebe für Webentwicklung.\n              </p>\n         ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: unknown regexp options - ct
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:65: syntax error, unexpected $undefined
+... </p>\n            </section>\n            <section#{
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+...id => "footboxRight", :class="footerBox")}>\n              <...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected ')', expecting '}'
+...boxRight", :class="footerBox")}>\n              <div>\n     ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected $undefined
+...rBox")}>\n              <div>\n              <a href=\"http:...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...  <div>\n              <a href=\"http://creativecommons.org/...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected ',', expecting '}'
+...</div>\n  </body>\n</html>\n", -6, false);::Haml::Util.html_...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected kENSURE, expecting '}'
+...Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71: syntax error, unexpected kEND, expecting '}'
+...uffer = @haml_buffer.upper;end;
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:74: syntax error, unexpected kEND, expecting '}'):
+    51:             &nbsp;
+    52:         #footerContainer
+    53:           %footer{:id => "footer"}
+    54:             %section{:id => "footboxLeft", :class="footerBox"}
+    55:               :plain
+    56:                 <nav id="footerNavigation">
+    57:                   <ul>
+  app/views/layouts/application.html.haml:74:in `compile'
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (37.4ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (45.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:55:29 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (14.5ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/images/icons/cc-icon-cc-30.png" for 88.67.17.211 at Sat Jul 09 22:55:29 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-cc-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/cc-icon-by-30.png" for 88.67.17.211 at Sat Jul 09 22:55:29 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-by-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/cc-icon-sa-30.png" for 88.67.17.211 at Sat Jul 09 22:55:29 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-sa-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/styles/images/icons/cc-icon-cc-30.png" for 88.67.17.211 at Sat Jul 09 22:55:30 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-cc-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/cc-icon-by-30.png" for 88.67.17.211 at Sat Jul 09 22:55:30 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-by-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/cc-icon-sa-30.png" for 88.67.17.211 at Sat Jul 09 22:55:30 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-sa-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:58:22 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/images/icons/cc-icon-cc-30.png" for 88.67.17.211 at Sat Jul 09 22:58:23 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-cc-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/cc-icon-by-30.png" for 88.67.17.211 at Sat Jul 09 22:58:23 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-by-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/cc-icon-sa-30.png" for 88.67.17.211 at Sat Jul 09 22:58:23 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-sa-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/cc-icon-cc-30.png" for 88.67.17.211 at Sat Jul 09 22:58:24 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-cc-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/cc-icon-by-30.png" for 88.67.17.211 at Sat Jul 09 22:58:24 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-by-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/cc-icon-sa-30.png" for 88.67.17.211 at Sat Jul 09 22:58:24 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-sa-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:58:32 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/images/icons/cc-icon-cc-30.png" for 88.67.17.211 at Sat Jul 09 22:58:33 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-cc-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/cc-icon-by-30.png" for 88.67.17.211 at Sat Jul 09 22:58:33 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-by-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/cc-icon-sa-30.png" for 88.67.17.211 at Sat Jul 09 22:58:33 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-sa-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/cc-icon-cc-30.png" for 88.67.17.211 at Sat Jul 09 22:58:33 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-cc-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/cc-icon-by-30.png" for 88.67.17.211 at Sat Jul 09 22:58:33 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-by-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/cc-icon-sa-30.png" for 88.67.17.211 at Sat Jul 09 22:58:34 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-sa-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 22:58:42 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/styles/images/icons/cc-icon-cc-30.png" for 88.67.17.211 at Sat Jul 09 22:58:43 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-cc-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/cc-icon-by-30.png" for 88.67.17.211 at Sat Jul 09 22:58:43 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-by-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/cc-icon-sa-30.png" for 88.67.17.211 at Sat Jul 09 22:58:48 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-sa-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/cc-icon-cc-30.png" for 88.67.17.211 at Sat Jul 09 22:58:48 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-cc-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/styles/images/icons/cc-icon-by-30.png" for 88.67.17.211 at Sat Jul 09 22:58:48 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-by-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/styles/images/icons/cc-icon-sa-30.png" for 88.67.17.211 at Sat Jul 09 22:58:49 +0200 2011
+
+ActionController::RoutingError (No route matches "/styles/images/icons/cc-icon-sa-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 23:06:33 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/icons/cc-icon-nc-30.png" for 88.67.17.211 at Sat Jul 09 23:06:38 +0200 2011
+
+ActionController::RoutingError (No route matches "/images/icons/cc-icon-nc-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/images/icons/cc-icon-nc-30.png" for 88.67.17.211 at Sat Jul 09 23:06:39 +0200 2011
+
+ActionController::RoutingError (No route matches "/images/icons/cc-icon-nc-30.png"):
+  
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 23:07:00 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 23:08:49 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 23:09:32 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (19.6ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 23:09:52 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (15.9ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.230.129.121 at Sat Jul 09 23:10:10 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (16.1ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.230.129.121 at Sat Jul 09 23:10:11 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (15.9ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 23:10:19 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (50.0ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 23:10:40 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.230.129.121 at Sat Jul 09 23:10:51 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.230.129.121 at Sat Jul 09 23:10:51 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 23:13:30 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (16.2ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 23:16:12 +0200 2011
+  Processing by HomeController#index as HTML
+ERROR: compiling _app_views_layouts_application_html_haml__1745125584_34490140_0 RAISED compile error
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+... "post", :action => "#", :id="magicbar")}>\n                ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected ')', expecting '}'
+...action => "#", :id="magicbar")}>\n                <div>\n   ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...ar")}>\n                <div>\n                  <div id='mb...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...iv>\n                  <div id='mbTermIcon'></div>\n        ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected '<'
+...        <div id='mbTermIcon'></div>\n                  <inpu...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: unknown regexp options - dv
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...hen'>\n                </div>\n              </form>\n      ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: unknown regexp options - dv
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...  </form>\n            </div>\n          </nav>\n        </d...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: unknown regexp options - dv
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...       </nav>\n        </div>\n        <div id='contentConta...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...       </div>\n        <div id='contentContainer'>\n        ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...  <div id='contentContainer'>\n          <section id='conten...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...ainer'>\n          <section id='content'>\n            <arti...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...       <section id='content'>\n            <article class='t...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...'>\n            <article class='textpage'>\n              #{
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...   <article class='textpage'>\n              #{
+                              ^
+Function body:           def _app_views_layouts_application_html_haml__1745125584_34490140_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:preserve=>["textarea", "pre", "code"], :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :format=>:html5, :escape_html=>true, :encoding=>nil, :escape_attrs=>true, :attr_wrapper=>"'"});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset='utf-8'>\n    <title>\n      Yeah.\n    </title>\n    #{_hamlout.adjust_tabs(2); 
+
+
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( include_stylesheets :default, :media => 'all'
+));}\n    #{_hamlout.format_script_false_false_false_true_false_true_false(( include_javascripts :default
+));}\n  </head>\n  <body>\n    <div id='mainContainer'>\n      <div id='main'>\n        <div id='headerContainer'>\n          <div id='header'>\n            <div id='headerTitleContainer'>\n              <h1 id='siteName'>\n                #{_hamlout.adjust_tabs(6); 
+
+
+
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to "Dennis Schubert", root_path
+));}\n              </h1>\n              <h2 id='siteSlogan'>\n                blog, projects and nerdiness\n              </h2>\n            </div>\n            <div id='headerSocialContainer'>\n              <div id=\"headerSocial\">\n                <a href=\"http://twitter.com/denschub\" target=\"blank\" title=\"@denschub auf Twitter\" class=\"twitterIcon\"><img src=\"/images/icons/icon-twitter-48.png\" alt=\"twitter\"></a>\n                <a href=\"https://pod.geraspora.de/people/12\" target=\"blank\" title=\"denschub@pod.geraspora.de auf Diaspora\" class=\"diasporaIcon\"><img src=\"/images/icons/icon-diaspora-48.png\" alt=\"diaspora\"></a>\n                <a href=\"#\" title=\"RSS-Feed des Blogs\" class=\"rssIcon\"><img src=\"/images/icons/icon-rss-48.png\" alt=\"rss\"></a>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div id='navBarContainer'>\n          <nav id='navBar'>\n            <div id='navBarLeft'>\n              <ul>\n                <li><a href=\"http://w.dsx.cc/dr/\">Home</a> | </li>\n                <li><a href=\"http://w.dsx.cc/dr/page.html\">Über mich</a> | </li> \n                <li><a href=\"#\">Projekte</a> | </li>\n                <li><a href=\"http://w.dsx.cc/dr/blog.html\">Blog</a></li>\n              </ul>\n            </div>\n            <div id='navBarRight'>\n              <form#{_hamlout.adjust_tabs(-1); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.attributes({}, nil, :method => "post", :action => "#", :id="magicbar")}>\n                <div>\n                  <div id='mbTermIcon'></div>\n                  <input id='mbTerm' name='searchphrase' type='text'>\n                  <input id='mbSubmit' type='submit' value='Suchen'>\n                </div>\n              </form>\n            </div>\n          </nav>\n        </div>\n        <div id='contentContainer'>\n          <section id='content'>\n            <article class='textpage'>\n              #{
+
+
+
+
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( yield
+));}\n            </article>\n          </section>\n        </div>\n        <div id='paginationContainer'>\n          <nav id='pagination'>\n            &nbsp;\n          </nav>\n        </div>\n        <div id='footerContainer'>\n          <footer id='footer'>\n            <section class='footerBox' id='footboxLeft'>\n              <nav id='footerNavigation'>\n                <ul>\n                  <li>\n                    #{_hamlout.adjust_tabs(3); 
+
+
+
+
+
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to "Home", root_path
+));}\n                  </li>\n                </ul>\n              </nav>\n            </section>\n            <section class='footerBox' id='footboxCenter'>\n              <p>\n                17 Jahre junger Nerd mit Sozialleben. Nutzer und Entwickler von\n                #{_hamlout.adjust_tabs(-2); 
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to "Open Source-Software.", "http://github.com/denschub", {:target => "_blank"}
+));}\n                Mitentwickler eines dezentralen sozialen Netzwerkes,\n                #{
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to "Diaspora.", "http://github.com/diaspora/diaspora", {:target => "_blank"}
+));}\n                Vorliebe für Webentwicklung.\n              </p>\n            </section>\n            <section class='footerBox' id='footboxRight'>\n              <div>\n                #{
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to image_tag("/images/icons/cc-icon-cc-30.png"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "Der Inhalt steht unter einer Creative-Commons-Lizenz"}
+));}\n                #{_hamlout.format_script_false_false_false_true_false_true_false(( link_to image_tag("/images/icons/cc-icon-by-30.png"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "Der Inhalt darf mit Namensnennung weiterverwendet werden"}
+));}\n                #{_hamlout.format_script_false_false_false_true_false_true_false(( link_to image_tag("/images/icons/cc-icon-sa-30.png"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "Die Weitergabe des Inhalts muss unter der gleichen Lizenz erfolgen"}
+));}\n              </div>\n            </section>\n          </footer>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n", -8, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:71:in `compile'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_view/template.rb:134:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_view/template.rb:127:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:62:in `_render_template'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:26:in `render_without_haml'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/haml-3.1.2/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:92:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activerecord-3.0.3/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:151:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:440:in `_run__738958071__process_action__199225275__callbacks'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `send'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `send'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:120:in `process'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:40:in `process'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal.rb:138:in `dispatch'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_controller/metal.rb:178:in `action'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/sass-3.1.4/lib/sass/../sass/plugin/rack.rb:54:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:32:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/application.rb:77:in `send'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/handler/webrick.rb:13:in `run'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/rack-1.2.3/lib/rack/server.rb:217:in `start'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/commands/server.rb:65:in `start'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/commands.rb:30
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/commands.rb:27:in `tap'
+/usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/railties-3.0.3/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered home/index.html.haml within layouts/application (10.7ms)
+Completed   in 15ms
+
+ActionView::Template::Error (compile error
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+... "post", :action => "#", :id="magicbar")}>\n                ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected ')', expecting '}'
+...action => "#", :id="magicbar")}>\n                <div>\n   ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...ar")}>\n                <div>\n                  <div id='mb...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...iv>\n                  <div id='mbTermIcon'></div>\n        ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected '<'
+...        <div id='mbTermIcon'></div>\n                  <inpu...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: unknown regexp options - dv
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...hen'>\n                </div>\n              </form>\n      ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: unknown regexp options - dv
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...  </form>\n            </div>\n          </nav>\n        </d...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: unknown regexp options - dv
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...       </nav>\n        </div>\n        <div id='contentConta...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...       </div>\n        <div id='contentContainer'>\n        ...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...  <div id='contentContainer'>\n          <section id='conten...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...ainer'>\n          <section id='content'>\n            <arti...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...       <section id='content'>\n            <article class='t...
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...'>\n            <article class='textpage'>\n              #{
+                              ^
+/var/www/dennis-schubert.de/schubio/app/views/layouts/application.html.haml:37: syntax error, unexpected $undefined
+...   <article class='textpage'>\n              #{
+                              ^):
+    34:                   <li><a href="http://w.dsx.cc/dr/blog.html">Blog</a></li>
+    35:                 </ul>
+    36:             #navBarRight
+    37:               %form{:method => "post", :action => "#", :id="magicbar"}
+    38:                 %div
+    39:                   %div{:id => "mbTermIcon"}
+    40:                   %input{:type => "text", :name => "searchphrase", :id => "mbTerm"}
+  app/views/layouts/application.html.haml:71:in `compile'
+
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered /usr/local/rvm/gems/ree-1.8.7-2011.03@schubio/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.9ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 23:16:24 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sat Jul 09 23:28:16 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (25.2ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 88.67.17.211 at Sun Jul 10 12:15:03 +0200 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (19.3ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)

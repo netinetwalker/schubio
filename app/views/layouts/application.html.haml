@@ -2,12 +2,60 @@
 %html
   %head
     %meta{:charset => 'utf-8'}
-
     %title
       Yeah.
-
     = include_stylesheets :default, :media => 'all'
     = include_javascripts :default
-    
-  %body{:class => "#{yield(:body_class)}"}
-    = yield
+  %body
+    #mainContainer
+      #main
+        #headerContainer
+          #header
+            #headerTitleContainer
+              %h1{:id => 'siteName'}
+                = link_to "Dennis Schubert", root_path
+              %h2{:id => 'siteSlogan'}
+                blog, projects and nerdiness
+            #headerSocialContainer
+              #headerSocial
+                = link_to image_tag("/images/icons/icon-twitter-48.png"), "http://twitter.com/denschub", {:target => "_blank", :title => "@denschub auf Twitter"}
+                = link_to image_tag("/images/icons/icon-diaspora-48.png"), "https://pod.geraspora.de/people/12", {:target => "_blank", :title => "Dennis Schubert bei Diaspora"}
+                = link_to image_tag("/images/icons/icon-rss-48.png"), "#", {:target => "_blank", :title => "RSS-Feed des Blogs"}
+        #navBarContainer
+          %nav{:id => "navBar"}
+            #navBarLeft
+              %ul
+                %li
+                  = link_to "Home", root_path
+            #navBarRight
+              %form{:method => "post", :action => "#", :id => "magicbar"}
+                %div
+                  %div{:id => "mbTermIcon"}
+                  %input{:type => "text", :name => "searchphrase", :id => "mbTerm"}
+                  %input{:type => "submit", :value => "Suchen", :id => "mbSubmit"}
+        #contentContainer
+          %section{:id => "content"}
+            %article{:class => "textpage"}
+              = yield
+        #paginationContainer
+          %nav{:id => "pagination"}
+            &nbsp;
+        #footerContainer
+          %footer{:id => "footer"}
+            %section{:id => "footboxLeft", :class => "footerBox"}
+              %nav{:id => "footerNavigation"}
+                %ul
+                  %li
+                    = link_to "Home", root_path
+            %section{:id => "footboxCenter", :class => "footerBox"}
+              %p
+                17 Jahre junger Nerd mit Sozialleben. Nutzer und Entwickler von
+                = link_to "Open Source-Software.", "http://github.com/denschub", {:target => "_blank"}
+                Mitentwickler eines dezentralen sozialen Netzwerkes,
+                = link_to "Diaspora.", "http://github.com/diaspora/diaspora", {:target => "_blank"}
+                Vorliebe für Webentwicklung.
+            %section{:id => "footboxRight", :class => "footerBox"}
+              %div
+                = link_to image_tag("/images/icons/cc-icon-cc-30.png"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "Der Inhalt steht unter einer Creative-Commons-Lizenz"}
+                = link_to image_tag("/images/icons/cc-icon-by-30.png"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "Der Inhalt darf mit Namensnennung weiterverwendet werden"}
+                = link_to image_tag("/images/icons/cc-icon-sa-30.png"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "Die Weitergabe des Inhalts muss unter der gleichen Lizenz erfolgen"}

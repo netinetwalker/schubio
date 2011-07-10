@@ -5,7 +5,9 @@ gzip_assets: off
 
 javascripts:
   default:
-    - public/javascripts/*
+    - public/javascripts/jquery.js
+    - public/javascripts/vendor/tipsy-0.1.7/javascripts/jquery.tipsy.js
+    - public/javascripts/application.js
 
 stylesheets:
   default:
@@ -16,3 +18,6 @@ stylesheets:
     - public/stylesheets/cboxes.css
     - public/stylesheets/content.css
     - public/stylesheets/blog.css
+    
+    - public/javascripts/vendor/tipsy-0.1.7/stylesheets/tipsy.css
+    - public/javascripts/vendor/mod/tipsy/tipsy.mod.css

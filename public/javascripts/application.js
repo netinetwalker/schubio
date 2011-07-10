@@ -1,2 +1,38 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+$(document).ready(function(){
+    tipsyInit();
+    magicBarInit();
+});
+
+function tipsyInit() {
+    $("#footboxRight div a").tipsy({gravity: 's'});
+    $("#headerSocial a").tipsy({gravity: 'n'});
+}
+
+function magicBarInit() {
+    magicBarIconClickInit();
+    magicBarChangeModeInit();
+}
+
+    function magicBarIconClickInit() {
+        $("#mbTermIcon").click(function() {
+            $("#magicbar").submit();
+        });
+    }
+    
+    function magicBarChangeModeInit() {
+        $("#mbTerm").keyup(function() {
+            if($("#mbTerm").val().substring(1,0) == "!") {
+                magicBarChangeModeChange(true);
+            } else {
+                magicBarChangeModeChange(false);
+            }
+        });
+    }
+    
+    function magicBarChangeModeChange(executeMode) {
+        if (executeMode) {
+            $("#mbTermIcon").addClass("execute");
+        } else {
+            $("#mbTermIcon").removeClass("execute");
+        }
+    }

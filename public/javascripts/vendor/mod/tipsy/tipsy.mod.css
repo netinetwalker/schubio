@@ -1,0 +1,11 @@
+.tipsy {
+    background-image: url(tipsy.gif);
+    font-family: "DidactGothic";
+    font-size: 13px;
+    line-height: 17px;
+    opacity: 1;
+}
+
+    .tipsy-inner {
+        background-color: #9c5820;
+    }
