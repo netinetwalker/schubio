@@ -1,5 +1,5 @@
 Schubio::Application.routes.draw do
-  match ":pageUrl" => "page#show"  
+  match ":pageUrl" => "page#show", :as => :page
     
   root :to => "home#index"
 

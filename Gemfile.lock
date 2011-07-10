@@ -5,6 +5,7 @@ GEM
       Platform (>= 0.4.0)
       open4
     Platform (0.4.0)
+    RedCloth (4.2.7)
     abstract (1.0.0)
     actionmailer (3.0.3)
       actionpack (= 3.0.3)
@@ -35,6 +36,7 @@ GEM
     arel (2.0.10)
     builder (2.1.2)
     closure-compiler (1.1.1)
+    coderay (0.9.8)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     haml (3.1.2)
@@ -85,7 +87,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  RedCloth (~> 4.2.7)
   bundler
+  coderay (~> 0.9.8)
   haml (= 3.1.2)
   jammit (= 0.5.4)
   jquery-rails

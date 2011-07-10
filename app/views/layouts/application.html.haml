@@ -27,12 +27,16 @@
               %ul
                 %li
                   = link_to "Home", root_path
-            #navBarRight
-              %form{:method => "post", :action => "#", :id => "magicbar"}
-                %div
-                  %div{:id => "mbTermIcon"}
-                  %input{:type => "text", :name => "searchphrase", :id => "mbTerm"}
-                  %input{:type => "submit", :value => "Suchen", :id => "mbSubmit"}
+                  |
+                %li
+                  = link_to "About me", page_path({:pageUrl => "about_me"})
+            -#
+              #navBarRight
+                %form{:method => "post", :action => "#", :id => "magicbar"}
+                  %div
+                    %div{:id => "mbTermIcon"}
+                    %input{:type => "text", :name => "searchphrase", :id => "mbTerm"}
+                    %input{:type => "submit", :value => "Suchen", :id => "mbSubmit"}
         #contentContainer
           %section{:id => "content"}
             %article{:class => "textpage"}
@@ -47,6 +51,8 @@
                 %ul
                   %li
                     = link_to "Home", root_path
+                  %li
+                    = link_to "About me", page_path({:pageUrl => "about_me"})
             %section{:id => "footboxCenter", :class => "footerBox"}
               %p
                 17 Jahre junger Nerd mit Sozialleben. Nutzer und Entwickler von

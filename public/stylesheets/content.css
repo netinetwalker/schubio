@@ -5,6 +5,14 @@
 #content, #blog {
     color: #612B00;
 }
+
+#content em {
+  font-style: italic;
+}
+
+#content strong {
+  font-weight: bold;
+}
  
 #content h1, #content h2,
 #blog h1, #blog h2 {
