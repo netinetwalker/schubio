@@ -1,10 +1,10 @@
 Schubio::Application.routes.draw do
   devise_for :users
 
-  match ":pageUrl" => "page#show", :as => :page
+  match ":id" => "page#show", :as => :page
+  resources :page
     
   root :to => "home#index"
-  
   match '*a', :to => 'application#render_404'
 
   # The priority is based upon order of creation:

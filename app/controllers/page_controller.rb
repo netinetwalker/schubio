@@ -6,7 +6,7 @@ class PageController < ApplicationController
   end
 
   def show
-    @page = Page.where({:url => params[:pageUrl]}).first
+    @page = Page.where({:url => params[:id]}).first
     if @page
       respond_with @page
     else
