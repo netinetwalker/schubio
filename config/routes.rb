@@ -1,4 +1,6 @@
 Schubio::Application.routes.draw do
+  devise_for :users
+
   match ":pageUrl" => "page#show", :as => :page
     
   root :to => "home#index"
