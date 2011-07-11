@@ -40,3 +40,4 @@ module Schubio
     config.filter_parameters += [:password]
   end
 end
+

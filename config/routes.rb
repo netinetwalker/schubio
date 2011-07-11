@@ -2,6 +2,8 @@ Schubio::Application.routes.draw do
   match ":pageUrl" => "page#show", :as => :page
     
   root :to => "home#index"
+  
+  match '*a', :to => 'application#render_404'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
