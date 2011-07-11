@@ -1,8 +1,8 @@
 Schubio::Application.routes.draw do
   devise_for :users
 
-  resources :page
-  match ":id" => "page#show", :as => :page_clean
+  resources :pages
+  match ":id" => "pages#show", :as => :page_clean
     
   root :to => "home#index"
   match '*a', :to => 'application#render_404'
