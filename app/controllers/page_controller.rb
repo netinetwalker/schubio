@@ -7,15 +7,25 @@ class PageController < ApplicationController
 
   def show
     @page = Page.where({:url => params[:id]}).first
+        
     if @page
       respond_with @page
     else
-      raise ActiveRecord::RecordNotFound
+      @page = Page.find(params[:id])
+      if @page
+        respond_with @page
+      else
+        raise ActiveRecord::RecordNotFound
+      end
     end
   end
   
   def new
     @page = Page.new
+    
+    respond_to do |format|
+      format.html
+    end
   end
   
   def edit

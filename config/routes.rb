@@ -1,7 +1,7 @@
 Schubio::Application.routes.draw do
   devise_for :users
 
-  resources :page, :except => [:show]
+  resources :page
   match ":id" => "page#show", :as => :page_clean
     
   root :to => "home#index"

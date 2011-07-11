@@ -1,14 +1,4 @@
 %h1
   Edit Page
   
-- form_for(@page, :url => page_clean_path(@page.url)) do |f|
-  = f.label :title
-  = f.text_field :title
-  
-  = f.label :url
-  = f.text_field :url
-  
-  = f.label :content
-  = f.text_area :content
-
-  = f.submit
+= render 'form'
