@@ -17,6 +17,7 @@ stylesheets:
     - public/stylesheets/main.css
     - public/stylesheets/navigation.css
     - public/stylesheets/cboxes.css
+    - public/stylesheets/formulars.css
     - public/stylesheets/content.css
     - public/stylesheets/blog.css
     - public/stylesheets/coderay.css

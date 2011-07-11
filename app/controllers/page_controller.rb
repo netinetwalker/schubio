@@ -13,4 +13,23 @@ class PageController < ApplicationController
       raise ActiveRecord::RecordNotFound
     end
   end
+  
+  def new
+    @page = Page.new
+  end
+  
+  def edit
+    @page = Page.find(params[:id])
+  end
+  
+  def update
+    @page = Page.find(params[:id])
+
+    if @page.update_attributes(params[:page])
+      redirect_to page_path({:id => @page.url})
+    else
+      render :action => "edit"
+    end
+  end
+  
 end
