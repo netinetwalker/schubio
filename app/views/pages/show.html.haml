@@ -1,9 +1,10 @@
 - content_for :page_title do
   = @page.title
 
-#adminLinks
-  = link_to image_tag("/images/icons/raw/icon-new.svg", {:size => "24x24"}), new_page_path(), {:title => "New"}
-  = link_to image_tag("/images/icons/raw/icon-edit.svg", {:size => "24x24"}), edit_page_path(@page), {:title => "Edit"}
-  = link_to image_tag("/images/icons/raw/icon-delete.svg", {:size => "24x24"}), @page, {:confirm => 'Are you sure?', :method => :delete, :title => "Delete"}
+- if user_signed_in?
+  #adminLinks
+    = link_to image_tag("/images/icons/raw/icon-new.svg", {:size => "24x24"}), new_page_path(), {:title => "New"}
+    = link_to image_tag("/images/icons/raw/icon-edit.svg", {:size => "24x24"}), edit_page_path(@page), {:title => "Edit"}
+    = link_to image_tag("/images/icons/raw/icon-delete.svg", {:size => "24x24"}), @page, {:confirm => 'Are you sure?', :method => :delete, :title => "Delete"}
 
 = format(@page.content)
