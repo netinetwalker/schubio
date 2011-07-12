@@ -3,7 +3,7 @@
   %head
     %meta{:charset => 'utf-8'}
     %title
-      Yeah.
+      = page_title yield(:page_title)
     = include_stylesheets :default, :media => 'all'
     = include_javascripts :default
     = csrf_meta_tag

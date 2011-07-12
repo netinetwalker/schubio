@@ -15,4 +15,12 @@ module ApplicationHelper
     end
     return text.html_safe
   end
+
+  def page_title(title)
+    if title.nil?
+      return "Dennis Schubert"
+    else
+      return (title + " - Dennis Schubert")
+    end
+  end
 end
