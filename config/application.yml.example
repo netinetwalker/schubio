@@ -1,0 +1,20 @@
+defaults: &defaults
+  host: "foo.com"
+  smtp_sender_address: "mail@foo.com"
+  smtp_address: "mail.foo.com"
+  smtp_port: "587"
+  smtp_domain: "foo.com"
+  smtp_authentication: "plain"
+  smtp_starttls_auto: false
+  smtp_username: "user"
+  smtp_password: "secret"
+  smtp_openssl_verify_mode: "none"
+
+development:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+test:
+  <<: *defaults
