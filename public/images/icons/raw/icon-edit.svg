@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="60.72625"
+   height="61.168297"
+   id="svg5030"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="Neues Dokument 6">
+  <defs
+     id="defs5032" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="24.431156"
+     inkscape:cy="29.895357"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3130"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1315"
+     inkscape:window-height="711"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5035">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-506.77973,-433.20661)">
+    <g
+       id="g3130"
+       transform="matrix(1.25,0,0,-1.25,528.96883,478.74616)">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,0 -1.945,1.949 26.648,30.18 28.354,28.354 0,0 z m -2.169,-2.167 -6.789,-3.791 c -1.559,0.53 -2.16,1.79 -2.387,2.647 l 3.424,6.628 1.667,1.648 5.608,-5.61 -1.523,-1.522 z M 22.997,33.945 26.038,30.818 -2.571,2.575 -5.604,5.608 22.997,33.945 z m 7.544,-4.892 -6.782,7.077 c -0.381,0.391 -1.076,0.407 -1.467,0.018 L -9.529,4.613 -17.638,-11 c -0.206,-0.399 -0.126,-0.898 0.199,-1.21 0.193,-0.188 0.446,-0.293 0.715,-0.293 0.178,0 0.346,0.044 0.504,0.132 l 15.228,8.503 0.184,0.14 31.33,31.337 c 0.402,0.395 0.412,1.031 0.019,1.444"
+         style="fill:#9c5820;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path3132" />
+    </g>
+  </g>
+</svg>
