@@ -32,6 +32,18 @@ class PagesController < ApplicationController
     @page = Page.find(params[:id])
   end
   
+  def create
+    @page = Page.new(params[:post])
+
+    respond_to do |format|
+      if @page.save
+        format.html { redirect_to(@page) }
+      else
+        format.html { render :action => "new" }
+      end
+    end
+  end
+  
   def update
     @page = Page.find(params[:id])
 
