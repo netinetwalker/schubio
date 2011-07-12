@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def page_title(title)
-    if title.nil?
+    if title.empty?
       return "Dennis Schubert"
     else
       return (title + " - Dennis Schubert")
