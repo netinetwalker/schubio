@@ -10,6 +10,8 @@ defaults: &defaults
   smtp_password: "secret"
   smtp_openssl_verify_mode: "none"
 
+  closed_registrations: true
+
 development:
   <<: *defaults
 

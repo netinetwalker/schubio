@@ -1,5 +1,5 @@
 Schubio::Application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => {:registrations => "registrations"}
 
   resources :pages
   match ":id" => "pages#show", :as => :page_clean
