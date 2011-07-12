@@ -53,5 +53,14 @@ class PagesController < ApplicationController
       render :action => "edit"
     end
   end
+
+  def destroy
+    @page = Page.find(params[:id])
+    @page.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(root_path) }
+    end
+  end
   
 end
