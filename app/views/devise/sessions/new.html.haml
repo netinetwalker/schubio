@@ -1,22 +1,25 @@
-- content_for :page_title do
-  Sign in
+#contentContainer
+  %section{:id => "content"}
+    %article{:class => "textpage"}
+      - content_for :page_title do
+        Sign in
 
-%h1
-  Sign in
+      %h1
+        Sign in
 
-= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
-  %div
-    = f.label :email
-    = f.email_field :email
+      = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+        %div
+          = f.label :email
+          = f.email_field :email
 
-    = f.label :password
-    = f.password_field :password
+          = f.label :password
+          = f.password_field :password
 
-    .checkboxRow
-      = f.check_box :remember_me
-      = f.label :remember_me
+          .checkboxRow
+            = f.check_box :remember_me
+            = f.label :remember_me
 
-    = f.submit "Sign in"
+          = f.submit "Sign in"
 
-#formularAdditionalLinks
-  = render :partial => "devise/shared/links"
+      #formularAdditionalLinks
+        = render :partial => "devise/shared/links"

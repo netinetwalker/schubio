@@ -38,10 +38,7 @@
                     %div{:id => "mbTermIcon"}
                     %input{:type => "text", :name => "searchphrase", :id => "mbTerm"}
                     %input{:type => "submit", :value => "Suchen", :id => "mbSubmit"}
-        #contentContainer
-          %section{:id => "content"}
-            %article{:class => "textpage"}
-              = yield
+        = yield
         #paginationContainer
           %nav{:id => "pagination"}
             &nbsp;
