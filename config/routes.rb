@@ -1,5 +1,9 @@
 Schubio::Application.routes.draw do
+  get "projects/index"
+
   devise_for :users, :controllers => {:registrations => "registrations"}
+
+  match "projects" => "projects#index", :as => :projects
 
   resources :pages
   match ":id" => "pages#show", :as => :page_clean
