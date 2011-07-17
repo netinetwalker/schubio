@@ -6,7 +6,7 @@
     color: #612B00;
 }
 
-#content em {
+#content em, .cbox em {
   font-style: italic;
 }
 

@@ -16,12 +16,12 @@
               %h1{:id => 'siteName'}
                 = link_to "Dennis Schubert", root_path
               %h2{:id => 'siteSlogan'}
-                blog, projects and nerdiness
+                projects and nerdiness
             #headerSocialContainer
               #headerSocial
-                = link_to image_tag("/images/icons/raw/icon-twitter.svg", :size => "48x48"), "http://twitter.com/denschub", {:target => "_blank", :class => "twitterIcon", :title => "@denschub auf Twitter"}
-                = link_to image_tag("/images/icons/raw/icon-diaspora.svg", :size => "48x48"), "https://pod.geraspora.de/people/12", {:target => "_blank", :class => "diasporaIcon", :title => "Dennis Schubert bei Diaspora"}
-                = link_to image_tag("/images/icons/raw/icon-rss.svg", :size => "48x48"), "#", {:target => "_blank", :class => "rssIcon", :title => "RSS-Feed des Blogs"}
+                = link_to image_tag("/images/icons/raw/icon-twitter.svg", :size => "48x48"), "http://twitter.com/denschub", {:target => "_blank", :class => "twitterIcon", :title => "@denschub on twitter"}
+                = link_to image_tag("/images/icons/raw/icon-diaspora.svg", :size => "48x48"), "https://pod.geraspora.de/people/12", {:target => "_blank", :class => "diasporaIcon", :title => "Dennis Schubert on Diaspora"}
+                = link_to image_tag("/images/icons/raw/icon-rss.svg", :size => "48x48"), "#", {:target => "_blank", :class => "rssIcon", :title => "Twitter-RSS feed"}
         #navBarContainer
           %nav{:id => "navBar"}
             #navBarLeft
@@ -56,13 +56,13 @@
                       = link_to 'Sign out', destroy_user_session_path, :method => :delete
             %section{:id => "footboxCenter", :class => "footerBox"}
               %p
-                17 Jahre junger Nerd mit Sozialleben. Nutzer und Entwickler von
-                = link_to "Open Source-Software.", "http://github.com/denschub", {:target => "_blank"}
-                Mitentwickler eines dezentralen sozialen Netzwerkes,
+                17 years young nerd with a social life. User and developer of
+                = link_to "open source-software.", "http://github.com/denschub", {:target => "_blank"}
+                Developing a decentral social network,
                 = link_to "Diaspora.", "http://github.com/diaspora/diaspora", {:target => "_blank"}
-                Vorliebe für Webentwicklung.
+                And I love web-development.
             %section{:id => "footboxRight", :class => "footerBox"}
               %div
-                = link_to image_tag("/images/icons/raw/cc-icon-cc.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "Der Inhalt steht unter einer Creative-Commons-Lizenz"}
-                = link_to image_tag("/images/icons/raw/cc-icon-by.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "Der Inhalt darf mit Namensnennung weiterverwendet werden"}
-                = link_to image_tag("/images/icons/raw/cc-icon-sa.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "Die Weitergabe des Inhalts muss unter der gleichen Lizenz erfolgen"}
+                = link_to image_tag("/images/icons/raw/cc-icon-cc.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "The content is licensed under a Creative Commons-license"}
+                = link_to image_tag("/images/icons/raw/cc-icon-by.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "The content can be reused with attribution"}
+                = link_to image_tag("/images/icons/raw/cc-icon-sa.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "The content can be shared under the same or similar license"}
