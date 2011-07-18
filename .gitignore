@@ -3,3 +3,4 @@ config/application.yml
 log/*
 tmp/*
 public/assets/*
+public/uploads/*
