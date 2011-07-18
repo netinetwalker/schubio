@@ -33,7 +33,7 @@ class PagesController < ApplicationController
   end
   
   def create
-    @page = Page.new(params[:post])
+    @page = Page.new(params[:page])
 
     respond_to do |format|
       if @page.save
