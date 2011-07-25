@@ -1,13 +1,14 @@
 class PagesController < ApplicationController
   respond_to :html
-  
+  before_filter :authenticate_user!, :except => [:index, :show]
+
   def index
     redirect_to root_path
   end
 
   def show
     @page = Page.where({:url => params[:id]}).first
-        
+
     if @page
       respond_with @page
     else
@@ -19,19 +20,19 @@ class PagesController < ApplicationController
       end
     end
   end
-  
+
   def new
     @page = Page.new
-    
+
     respond_to do |format|
       format.html
     end
   end
-  
+
   def edit
     @page = Page.find(params[:id])
   end
-  
+
   def create
     @page = Page.new(params[:page])
 
@@ -43,7 +44,7 @@ class PagesController < ApplicationController
       end
     end
   end
-  
+
   def update
     @page = Page.find(params[:id])
 
@@ -62,5 +63,5 @@ class PagesController < ApplicationController
       format.html { redirect_to(root_path) }
     end
   end
-  
+
 end
