@@ -43,11 +43,11 @@
     padding-left: 20px;
 }
 
-    #content p a, #blog p a {
+    #content p a, #content li a, #blog p a {
         color: #612B00;
     }
     
-        #content p a:hover, #blog p a:hover {
+        #content p a:hover, #content li a:hover, #blog p a:hover {
             text-decoration: none;
         }
         
