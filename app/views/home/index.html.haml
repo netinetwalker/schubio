@@ -2,7 +2,7 @@
   %section{:id => "cboxes"}
     %article{:class => "cbox"}
       .cboxImage
-        - link_to page_clean_path({:id => "about_me"}) do
+        = link_to page_clean_path({:id => "about_me"}) do
           .cboxTypeLabel
             Who I am
           = image_tag("/images/frontPage/teaserProfile.svg")
@@ -13,7 +13,7 @@
 
     %article{:class => "cbox"}
       .cboxImage
-        - link_to page_clean_path({:id => "about_this_website"}) do
+        = link_to page_clean_path({:id => "about_this_website"}) do
           .cboxTypeLabel
             What this page is about
           = image_tag("/images/frontPage/teaserPage.svg")
@@ -22,7 +22,7 @@
 
     %article{:class => "cbox"}
       .cboxImage
-        - link_to projects_path do
+        = link_to projects_path do
           .cboxTypeLabel
             What I'm working on
           = image_tag("/images/frontPage/teaserProjects.svg")
@@ -31,7 +31,7 @@
 
     %article{:class => "cbox"}
       .cboxImage
-        - link_to ("http://twitter.com/denschub", :target => "_blank") do
+        = link_to("http://twitter.com/denschub", :target => "_blank") do
           .cboxTypeLabel
             @denschub on twitter
           = image_tag("/images/frontPage/teaserTwitter.svg")
@@ -40,7 +40,7 @@
 
     %article{:class => "cbox"}
       .cboxImage
-        - link_to ("https://pod.geraspora.de/people/12", :target => "_blank") do
+        = link_to("https://pod.geraspora.de/people/12", :target => "_blank") do
           .cboxTypeLabel
             Me on diaspora
           = image_tag("/images/frontPage/teaserDiaspora.svg")
@@ -49,7 +49,7 @@
 
     %article{:class => "cbox"}
       .cboxImage
-        - link_to ("https://github.com/denschub", :target => "_blank") do
+        = link_to("https://github.com/denschub", :target => "_blank") do
           .cboxTypeLabel
             Me on github
           = image_tag("/images/frontPage/teaserGithub.svg")

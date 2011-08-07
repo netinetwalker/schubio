@@ -5,7 +5,7 @@
   %section{:id => "cboxes"}
     %article{:class => "cbox"}
       .cboxImage
-        - link_to "about_this_website" do
+        = link_to "about_this_website" do
           .cboxTypeLabel
             Schubio
             %span.cboxTypeRight
@@ -16,7 +16,7 @@
 
     %article{:class => "cbox"}
       .cboxImage
-        - link_to ("http://github.com/diaspora/diaspora", :target => "_blank") do
+        = link_to("http://github.com/diaspora/diaspora", :target => "_blank") do
           .cboxTypeLabel
             Diaspora
             %span.cboxTypeRight
@@ -27,7 +27,7 @@
 
     %article{:class => "cbox"}
       .cboxImage
-        - link_to ("http://github.com/denschub/bottle-linkshorter", :target => "_blank") do
+        = link_to("http://github.com/denschub/bottle-linkshorter", :target => "_blank") do
           .cboxTypeLabel
             Bottle-Linkshorter
             %span.cboxTypeRight
