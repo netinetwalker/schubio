@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(:version => 20110808150212) do
     t.integer  "author_id"
     t.string   "title"
     t.string   "alias"
-    t.text     "intro"
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"

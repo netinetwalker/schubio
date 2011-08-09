@@ -4,7 +4,6 @@ class CreateBlogposts < ActiveRecord::Migration
       t.references :author
       t.string :title
       t.string :alias
-      t.text :intro
       t.text :content
 
       t.timestamps

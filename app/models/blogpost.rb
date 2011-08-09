@@ -1,3 +1,4 @@
 class Blogpost < ActiveRecord::Base
-  belongs_to :author
+  belongs_to :user
+  has_many :blogpost_comments
 end
