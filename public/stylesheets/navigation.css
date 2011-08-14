@@ -1,7 +1,7 @@
 /*
  * Navbar and main navigation
  */
- 
+
 #navBarLeft, #navBarRight {
     width: 460px;
 }
@@ -16,40 +16,40 @@
         float: right;
         position: relative;
     }
-    
+
         #navBarRight form {
             position: absolute;
             right: 0;
         }
-        
+
             #navBarRight form input {
                 display: block;
                 float: left;
             }
-    
+
         #navBarRight #mbTerm, #navBarRight #mbSubmit, #navBarRight #mbTermIcon {
             background-color: #7b3c0a;
             border: 1px solid #612b00;
             height: 30px;
         }
-        
+
         #navBarRight #mbTermIcon {
             width: 32px;
             height: 32px;
             float: left;
             background: url("../images/icons/icon-search-16.png") no-repeat 50% 50% #7b3c0a;
         }
-        
+
             #navBarRight #mbTermIcon.execute {
                 background-image: url("../images/icons/icon-execute-16.png");
             }
-    
+
         #navBarRight #mbTerm {
             background-color: #eae3d8;
             width: 176px;
             font-family: "DidactGothic", Verdana, Sans;
         }
-    
+
         #navBarRight #mbSubmit {
             border-radius: 15px;
             -moz-border-radius: 15px;
@@ -64,7 +64,7 @@
             display: block;
             font-family: "DidactGothic", Verdana, Sans;
         }
-    
+
     #navBarLeft {
         padding-top: 12px;
     }
@@ -73,13 +73,37 @@
     display: inline;
     color: #eae3d8;
     font-size: 24px;
+    text-shadow: 1px 1px 0 #612b00;
+    padding-right: 5px;
 }
 
     #navBar ul li a {
         color: #fff;
         text-decoration: none;
+        margin-right: 5px;
     }
-    
+
         #navBar ul li a:hover {
             color: #eae3d8;
         }
+
+.pagination {
+  font-size: 24px;
+  color: #c08858;
+  text-shadow: 1px 1px 0 #612b00;
+  padding-top: 12px;
+  text-align: center;
+}
+
+  .pagination a, .pagination span, .pagination em {
+    padding: 0 5px;
+  }
+
+  .pagination a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+    .pagination a:hover {
+      color: #eae3d8;
+    }

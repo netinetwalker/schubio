@@ -28,6 +28,7 @@ body {
     border-bottom: 1px solid #612b00;
     border-top: 1px solid #c08858;
     height: 51px;
+    text-shadow: 1px 1px 0 #fff;
 }
 
 #contentContainer, #cboxesContainer, #blogboxesContainer, #blogContainer {
@@ -49,6 +50,7 @@ body {
         width: 288px;
         color: #9c5820;
         position: relative;
+        text-shadow: 1px 1px 0 #fff;
     }
     
         nav#footerNavigation ul li {
@@ -158,6 +160,7 @@ body {
  
 h1#siteName a, h2#siteSlogan {
     color: #9c5820;
+    text-shadow: 1px 1px 0 #fff;
 }
     h1#siteName a {
         font-size: 42px;

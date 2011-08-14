@@ -1,10 +1,10 @@
-- form_for @page do |f|
+= form_for @blogpost do |f|
   = f.label :title
   = f.text_field :title
-  
-  = f.label :url
-  = f.text_field :url
-  
+
+  = f.label :tags
+  = f.text_field :tag_list, :value => @blogpost.tag_list
+
   = f.label :content
   = f.text_area :content
 

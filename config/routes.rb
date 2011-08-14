@@ -5,12 +5,11 @@ Schubio::Application.routes.draw do
   # static match for projects-index
   match "projects" => "projects#index", :as => :projects
 
-  # routes for the blog
-  resources :blogposts do
+  match "blog/tag/:id(/page/:page)" => "blog#show_tag", :as => :blogtag
+  match "blog/page/:page" => "blog#index"
+  resources :blogposts, :controller => "blog", :path => "blog" do
     resources :blogpost_comments
   end
-  match "blog" => "blog#index", :as => :blog
-  match "blog/:id/:alias" => "blog#show", :as => :blog_detail
 
   # routes for the pages. takes pretty much everything except paths with / inside
   resources :pages

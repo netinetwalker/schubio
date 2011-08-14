@@ -11,6 +11,9 @@
     = include_javascripts :default
     = csrf_meta_tag
   %body
+    - flash.each do |name, msg|
+      = content_tag :div, msg, :id => "flash_#{name}"
+    = notice
     #mainContainer
       #main
         #headerContainer
@@ -33,7 +36,7 @@
                   = link_to "Home", root_path
                   |
                 %li
-                  = link_to "Blog", blog_path
+                  = link_to "Blog", blogposts_path
                   |
                 %li
                   = link_to "About me", page_clean_path({:id => "about_me"})
@@ -50,7 +53,7 @@
         = yield
         #paginationContainer
           %nav{:id => "pagination"}
-            &nbsp;
+            = page_pagination yield(:page_pagination)
         #footerContainer
           %footer{:id => "footer"}
             %section{:id => "footboxLeft", :class => "footerBox"}

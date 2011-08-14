@@ -1,80 +1,32 @@
 #blogboxesContainer
   %section{:id => "blogboxes"}
     %section{:id => "blogposts"}
-      %article{:class => "blogbox"}
-        .blogboxHeadline
-          %h2
-            = link_to "#" do
-              This is a hyper awesome blog-box.
-        .blogboxIntro
-          %p
-            Lorem ipsum dolor sit amet, consetetur sadipscing
-            elitr, sed diam nonumy eirmod tempor invidunt ut
-            labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo
-            dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit
-            amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo
-            duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        .blogboxInfo
-          .date
-            2077-07-07 17:17
-          .comments
-            42 comments
-          .tags
-            foo, bar, ding
-      %article{:class => "blogbox"}
-        .blogboxHeadline
-          %h2
-            = link_to "#" do
-              This is another hyper awesome blog-box.
-        .blogboxIntro
-          %p
-            Lorem ipsum dolor sit amet, consetetur sadipscing
-            elitr, sed diam nonumy eirmod tempor invidunt ut
-            labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo
-            dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit
-            amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo
-            duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        .blogboxInfo
-          .date
-            2077-07-07 17:17
-          .comments
-            42 comments
-          .tags
-            foo, bar, ding
-
+      - @blogposts.each do |blogpost|
+        %article{:class => "blogbox"}
+          .blogboxHeadline
+            %h2
+              = link_to blogpost.title, blogpost_path(blogpost)
+          .blogboxIntro
+            = format(blogpost.content)
+          .blogboxInfo
+            .date
+              = blogpost.created_at
+            .comments
+              = pluralize(blogpost.blogpost_comments.count, "Comment")
+            .tags
+              - sort_tags(blogpost.tags).each do |tag|
+                = link_to ["#", tag], blogtag_path(tag)
     %section{:id => "blogsidebar"}
+      - if user_signed_in?
+        #adminLinks
+          = link_to image_tag("/images/icons/raw/icon-new.svg", {:size => "24x24"}), new_blogpost_path, {:title => "New"}
       %nav{:id => "blogtags"}
         %h3
           Tags
         %ul
-          %li
-            = link_to "Foo", "#"
-          %li
-            = link_to "Bar", "#"
-          %li
-            = link_to "Ding", "#" 
-      %nav{:id => "blogpopular"}
-        %h3
-          Popular posts
-        %ul
-          %li
-            = link_to "Awesome Post", "#"
-          %li
-            = link_to "Awesome Post 2", "#"
-          %li
-            = link_to "Awesome Post 3", "#"
+          - sort_tags(@tags).each do |tag|
+            %li
+              = link_to tag, blogtag_path(tag)
       %nav{:id => "blogroll"}
         %h3
           Blogs I enjoy
@@ -84,3 +36,5 @@
           %li
             = link_to "Nice Guy 1", "#"
   .clear
+- content_for :page_pagination do
+  = will_paginate @blogposts

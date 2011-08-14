@@ -10,6 +10,22 @@
   font-style: italic;
 }
 
+#content abbr, acronym {
+  border-bottom: 1px dotted;
+}
+
+#content sup, #content sub {
+  font-size: 0.6em;
+}
+
+#content sup {
+  vertical-align: super;
+}
+
+#content sub {
+  vertical-align: sub;
+}
+
 #content strong {
   font-weight: bold;
 }
@@ -19,6 +35,7 @@
 article.blogbox h2,
 #blogsidebar h3 {
     font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
 }
 
     #content h1, #blog h1 {
@@ -41,9 +58,10 @@ article.blogbox h2,
             text-decoration: none;
         }
  
-#content p, #blog p {
+#content p, #blog p, .blogbox p {
     margin-top: 15px;
     padding-left: 20px;
+    text-shadow: 1px 1px 0 #fff;
 }
 
     #content p a, #content li a, #blog p a {
@@ -55,27 +73,31 @@ article.blogbox h2,
         }
         
 #content ul, #content ol,
-#blog ul, #blog ol {
+#blog ul, #blog ol,
+.blogbox ul, .blogbox ol{
     margin-top: 15px;
     padding-left: 50px;
+    text-shadow: 1px 1px 0 #fff;
 }
 
-    #content ul, #blog ul {
+    #content ul, #blog ul, .blogbox ul {
         list-style: disc outside;
     }
     
-    #content ol, #blog ol {
+    #content ol, #blog ol, .blogbox ol {
         list-style: decimal outside;
     }
     
-        #content ol ol, #blog ol ol {
+        #content ol ol, #blog ol ol, .blogbox ol ol {
             list-style-type: lower-latin;
         }
     
         #content ul ul, #content ul ol,
         #content ol ul, #content ol ol,
         #blog ul ul, #blog ul ol,
-        #blog ol ul, #blog ol ol {
+        #blog ol ul, #blog ol ol,
+        .blogbox ol ul, .blogbox ol ol,
+        .blogbox ul ul, .blogbox ul ol {
             margin-top: 0px;
             padding-left: 30px;
         }

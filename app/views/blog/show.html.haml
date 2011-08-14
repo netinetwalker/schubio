@@ -1,13 +1,63 @@
 #contentContainer
   %section{:id => "content"}
-    %article{:class => "textpage"}
+    %article{:class => "textpage blogpost"}
       - content_for :page_title do
-        = @page.title
-
+        = @blogpost.title
       - if user_signed_in?
         #adminLinks
-          = link_to image_tag("/images/icons/raw/icon-new.svg", {:size => "24x24"}), new_page_path(), {:title => "New"}
-          = link_to image_tag("/images/icons/raw/icon-edit.svg", {:size => "24x24"}), edit_page_path(@page), {:title => "Edit"}
-          = link_to image_tag("/images/icons/raw/icon-delete.svg", {:size => "24x24"}), @page, {:confirm => 'Are you sure?', :method => :delete, :title => "Delete"}
+          = link_to image_tag("/images/icons/raw/icon-new.svg", {:size => "24x24"}), new_blogpost_path, {:title => "New"}
+          = link_to image_tag("/images/icons/raw/icon-edit.svg", {:size => "24x24"}), edit_blogpost_path(@blogpost), {:title => "Edit"}
+          = link_to image_tag("/images/icons/raw/icon-delete.svg", {:size => "24x24"}), @blogpost, {:confirm => 'Are you sure?', :method => :delete, :title => "Delete"}
+      %h1
+        = @blogpost.title
+      = format(@blogpost.content)
+      .blogboxInfo
+        .date
+          = @blogpost.created_at
+        .comments
+          = pluralize(@blogpost.blogpost_comments.count, "Comment")
+        .tags
+          - sort_tags(@blogpost.tags).each do |tag|
+            = link_to ["#", tag], blogtag_path(tag)
+      %h2
+        Comments
 
-      = format(@page.content)
+      #blogcommentsContainer
+        - @blogpost.blogpost_comments.each do |blogpost_comment|
+          .blogcommentBox
+            .commentAuthorImage
+              = image_tag gravatar_url(blogpost_comment.email)
+            .commentboxRight
+              .commentInfo
+                .commentAuthor
+                  = blogpost_comment.author
+                .commentDate
+                  = blogpost_comment.created_at
+              .commentContent
+                %p
+                  = blogpost_comment.content
+
+      %h2
+        New Comment
+
+      #blogcommentsNewContainer
+        .blogcommentForm
+          = form_for([@blogpost, @blogpost.blogpost_comments.build]) do |f|
+            - if @blogpost_comment.errors.any?
+              = pluralize(@blogpost_comment.errors.count, "Error")
+              - @blogpost_comment.errors.full_messages.each do |error|
+                = error
+            = f.label :author, "Your name"
+            = f.text_field :author
+
+            = f.label :email, "Your email-address. I'll store it secret, trust me."
+            = f.text_field :email
+
+            = f.label :content, "Your comment"
+            = f.text_area :content
+
+            = f.label :antispam, "Please write 'Elephant' backwards. Just to protect myself from spam."
+            = f.text_field :antispam
+            = f.hidden_field :correct_antispam, :value => "Donkey"
+
+            = f.submit "Submit"

@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/denschub/acts-as-taggable-on.git
+  revision: c3592fe1a906f6ff1cd12766c5cf1152c51eec40
+  specs:
+    acts-as-taggable-on (2.0.6)
+      rails (>= 3.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -96,6 +103,7 @@ GEM
     tzinfo (0.3.29)
     warden (1.0.4)
       rack (>= 1.0)
+    will_paginate (3.0.0)
     yui-compressor (0.9.6)
       POpen4 (>= 0.1.4)
 
@@ -103,10 +111,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  RedCloth (~> 4.2.7)
+  RedCloth (= 4.2.7)
+  acts-as-taggable-on!
   bundler
-  coderay (~> 0.9.8)
-  devise (~> 1.4.2)
+  coderay (= 0.9.8)
+  devise (= 1.4.2)
   haml (= 3.1.2)
   jammit (= 0.5.4)
   jquery-rails
@@ -116,3 +125,4 @@ DEPENDENCIES
   rake (= 0.8.7)
   sass (= 3.1.4)
   settingslogic (= 2.0.6)
+  will_paginate (= 3.0.0)
