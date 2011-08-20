@@ -19,34 +19,44 @@
         .tags
           - sort_tags(@blogpost.tags).each do |tag|
             = link_to ["#", tag], blogtag_path(tag)
-      %h2
-        Comments
 
       #blogcommentsContainer
-        - @blogpost.blogpost_comments.each do |blogpost_comment|
-          .blogcommentBox
-            .commentAuthorImage
-              = image_tag gravatar_url(blogpost_comment.email)
-            .commentboxRight
-              .commentInfo
-                .commentAuthor
-                  = blogpost_comment.author
-                .commentDate
-                  = blogpost_comment.created_at
-              .commentContent
-                %p
-                  = blogpost_comment.content
+        %h2
+          Comments
+        - if @blogpost.blogpost_comments.empty?
+          %h3
+            No comments yet. :(
+        - @blogpost.blogpost_comments.each do |comment|
+          - unless comment.created_at.nil?
+            .blogcommentBox
+              - if user_signed_in?
+                #adminLinks
+                  = link_to image_tag("/images/icons/raw/icon-mail.svg", {:size => "24x24"}), "mailto:" + comment.email, {:title => "Write an email"}
+                  = link_to image_tag("/images/icons/raw/icon-delete.svg", {:size => "24x24"}), [@blogpost, comment], {:confirm => 'Are you sure?', :method => :delete, :title => "Delete"}
+              .commentAuthorImage
+                = image_tag gravatar_url(comment.email)
+              .commentboxRight
+                .commentInfo
+                  .commentAuthor
+                    = comment.author
+                  .commentDate
+                    = comment.created_at
+                .commentContent
+                  = comment_format(comment.content)
 
-      %h2
-        New Comment
 
-      #blogcommentsNewContainer
+      #blogcommentform
+        %h2
+          New Comment
         .blogcommentForm
-          = form_for([@blogpost, @blogpost.blogpost_comments.build]) do |f|
+          = form_for([@blogpost, @blogpost_comment], :url => blogpost_blogpost_comments_path(@blogpost, @blogpost_comment, :anchor => "blogcommentform")) do |f|
             - if @blogpost_comment.errors.any?
-              = pluralize(@blogpost_comment.errors.count, "Error")
-              - @blogpost_comment.errors.full_messages.each do |error|
-                = error
+              %p
+                Something went wrong:
+              %ul
+                - @blogpost_comment.errors.each do |field, error|
+                  %li
+                    = error
             = f.label :author, "Your name"
             = f.text_field :author
 

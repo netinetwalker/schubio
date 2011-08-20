@@ -7,6 +7,8 @@
     %link{:rel => 'shortcut icon', :href => '/favicon.ico'}
     %title
       = page_title yield(:page_title)
+    %link{:rel => 'alternate', :type => 'application/atom+xml', :title => 'Dennis Schubert - Blog', :href => blog_feed_path(:format => :atom)}
+    %link{:rel => 'alternate', :type => 'application/atom+xml', :title => 'Dennis Schubert - Blog-comments', :href => blog_comments_feed_path(:format => :atom)}
     = include_stylesheets :default, :media => 'all'
     = include_javascripts :default
     = csrf_meta_tag
@@ -27,7 +29,7 @@
               #headerSocial
                 = link_to image_tag("/images/icons/raw/icon-twitter.svg", :size => "48x48"), "http://twitter.com/denschub", {:target => "_blank", :class => "twitterIcon", :title => "@denschub on twitter"}
                 = link_to image_tag("/images/icons/raw/icon-diaspora.svg", :size => "48x48"), "https://pod.geraspora.de/people/12", {:target => "_blank", :class => "diasporaIcon", :title => "Dennis Schubert on Diaspora"}
-                = link_to image_tag("/images/icons/raw/icon-rss.svg", :size => "48x48"), "http://twitter.com/statuses/user_timeline/29749577.rss", {:target => "_blank", :class => "rssIcon", :title => "Twitter-RSS feed"}
+                = link_to image_tag("/images/icons/raw/icon-rss.svg", :size => "48x48"), blog_feed_path(:format => :atom), {:target => "_blank", :class => "rssIcon", :title => "Blog-feed (Atom)"}
         #navBarContainer
           %nav{:id => "navBar"}
             #navBarLeft

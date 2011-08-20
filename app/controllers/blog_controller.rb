@@ -1,21 +1,30 @@
 class BlogController < ApplicationController
   respond_to :html
-  before_filter :authenticate_user!, :except => [:index, :show, :show_tag]
+  before_filter :authenticate_user!, :except => [:index, :feed, :show, :show_tag]
 
   def index
     @blogposts = Blogpost.paginate(:page => params[:page], :per_page => 5).order('created_at DESC')
     @tags = Blogpost.tag_counts_on(:tags)
-
     if @blogposts
-      respond_with @blogposts
+      respond_with @blogposts do |format|
+        format.html
+        format.atom
+      end
     else
       raise ActiveRecord::RecordNotFound
     end
+  end
 
+  def feed
+    @blogposts = Blogpost.limit(5).order(:updated_at => "DESC")
+    respond_with @blogposts do |format|
+      format.atom
+    end
   end
 
   def show
     @blogpost = Blogpost.find(params[:id])
+    @blogpost_comment = BlogpostComment.new
 
     if @blogpost
       respond_with @blogpost
@@ -65,6 +74,15 @@ class BlogController < ApplicationController
       redirect_to @blogpost
     else
       render :action => "edit"
+    end
+  end
+
+  def destroy
+    @blogpost = Blogpost.find(params[:id])
+    @blogpost.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(blogposts_path) }
     end
   end
 end
