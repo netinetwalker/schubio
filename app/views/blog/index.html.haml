@@ -27,7 +27,16 @@
           - sort_tags(@tags).each do |tag|
             %li
               = link_to tag, blogtag_path(tag)
-      %nav{:id => "blogroll"}
+      %nav{:id => "blogfeeds"}
+        %h3
+          Feeds
+        %ul
+          %li
+            = link_to "Blog articles", blog_feed_path(:format => "atom")
+          %li
+            = link_to "Blog comments", blog_comments_feed_path(:format => "atom")
+
+      -# %nav{:id => "blogroll"}
         %h3
           Blogs I enjoy
         %ul
