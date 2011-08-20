@@ -1,15 +1,13 @@
 class BlogController < ApplicationController
   respond_to :html
+  respond_to :atom, :only => [:feed]
   before_filter :authenticate_user!, :except => [:index, :feed, :show, :show_tag]
 
   def index
     @blogposts = Blogpost.paginate(:page => params[:page], :per_page => 5).order('created_at DESC')
     @tags = Blogpost.tag_counts_on(:tags)
     if @blogposts
-      respond_with @blogposts do |format|
-        format.html
-        format.atom
-      end
+      respond_with @blogposts
     else
       raise ActiveRecord::RecordNotFound
     end

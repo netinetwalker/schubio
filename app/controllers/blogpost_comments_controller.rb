@@ -1,6 +1,8 @@
 class BlogpostCommentsController < ApplicationController
   respond_to :html, :atom
 
+  before_filter :authenticate_user!, :except => [:feed, :create]
+
   def feed
     @blogpost_comments = BlogpostComment.limit(5).order(:created_at => "DESC")
 
