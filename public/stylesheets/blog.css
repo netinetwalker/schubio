@@ -120,6 +120,15 @@ article.blogbox {
     padding: 2px 2px 0 26px;
   }
 
+    .blogcommentBox .commentDate a {
+      color: #612B00;
+      text-decoration: none;
+    }
+
+      .blogcommentBox .commentDate a:hover {
+        text-decoration: underline;
+      }
+
   #blogcommentsContainer .blogcommentBox .commentContent p {
     padding-left: 0;
   }

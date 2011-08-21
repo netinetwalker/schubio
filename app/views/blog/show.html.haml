@@ -28,7 +28,7 @@
             No comments yet. :(
         - @blogpost.blogpost_comments.each do |comment|
           - unless comment.created_at.nil?
-            .blogcommentBox
+            .blogcommentBox{:id => "comment-" + comment.id.to_s()}
               - if user_signed_in?
                 #adminLinks
                   = link_to image_tag("/images/icons/raw/icon-mail.svg", {:size => "24x24"}), "mailto:" + comment.email, {:title => "Write an email"}
@@ -40,7 +40,7 @@
                   .commentAuthor
                     = comment.author
                   .commentDate
-                    = comment.created_at
+                    = link_to comment.created_at, {:anchor => "comment-" + comment.id.to_s()}
                 .commentContent
                   = comment_format(comment.content)
 
