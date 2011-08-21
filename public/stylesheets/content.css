@@ -32,17 +32,20 @@
  
 #content h1, #content h2,
 #blog h1, #blog h2,
+article.blogbox h1,
 article.blogbox h2,
 #blogsidebar h3 {
     font-weight: bold;
     text-shadow: 1px 1px 0 #fff;
 }
 
-    #content h1, #blog h1 {
+    #content h1, #blog h1 a, article.blogbox h1, article.blogbox h1 a {
         font-size: 36px;
         line-height: 54px;
         margin-top: 20px;
         margin-bottom: 15px;
+        text-decoration: none;
+        color: #612B00;
     }
     
     #content h2, #blog h2, article.blogbox h2,
@@ -64,11 +67,11 @@ article.blogbox h2,
     text-shadow: 1px 1px 0 #fff;
 }
 
-    #content p a, #content li a, #blog p a {
+    #content p a, #content li a, #blog p a, .blogbox p a {
         color: #612B00;
     }
     
-        #content p a:hover, #content li a:hover, #blog p a:hover {
+        #content p a:hover, #content li a:hover, #blog p a:hover, .blogbox p a:hover {
             text-decoration: none;
         }
         

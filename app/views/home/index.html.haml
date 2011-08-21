@@ -13,12 +13,12 @@
 
     %article{:class => "cbox"}
       .cboxImage
-        = link_to page_clean_path({:id => "about_this_website"}) do
+        = link_to blogposts_path() do
           .cboxTypeLabel
-            What this page is about
-          = image_tag("/images/frontPage/teaserPage.svg")
+            What's new
+          = image_tag("/images/frontPage/teaserBlog.svg")
           %h3.cboxCaption
-            Some of my thoughts behind thst website. And some technical stuff.
+            My blog. Warning: May contain sarcasm and nerdiness.
 
     %article{:class => "cbox"}
       .cboxImage

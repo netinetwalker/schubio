@@ -4,7 +4,7 @@
       - @blogposts.each do |blogpost|
         %article{:class => "blogbox"}
           .blogboxHeadline
-            %h2
+            %h1
               = link_to blogpost.title, blogpost_path(blogpost)
           .blogboxIntro
             = format(blogpost.content)

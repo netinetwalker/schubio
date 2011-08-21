@@ -8,7 +8,7 @@ class BlogpostCommentsController < ApplicationController
 
     # is that really needed?
     for comment in @blogpost_comments
-      comment.blogpost.title = "foo"
+      comment.blogpost.title = Blogpost.find(comment.blogpost_id).title
     end
 
     respond_with @blogpost_comments do |format|

@@ -18,5 +18,7 @@ module BlogpostCommentsHelper
     'strong' => nil,
     'em' => nil,
     'p' => nil,
+    'pre' => nil,
+    'code' => nil,
   }
 end
