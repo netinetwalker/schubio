@@ -15,7 +15,7 @@
         .date
           = @blogpost.created_at
         .comments
-          = pluralize(@blogpost.blogpost_comments.count, "Comment")
+          = link_to pluralize(@blogpost.blogpost_comments.count, "Comment"), blogpost_path(@blogpost, :anchor => "blogcommentsContainer")
         .tags
           - sort_tags(@blogpost.tags).each do |tag|
             = link_to ["#", tag], blogtag_path(tag)
