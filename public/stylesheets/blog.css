@@ -24,6 +24,16 @@ article.blogbox {
   padding: 10px;
 }
 
+  article.blogbox .blogboxHeadline h1 {
+    margin-bottom: 0;
+  }
+
+    article.blogbox .blogboxHeadline .date {
+      font-size: 0.9em;
+      margin-left: 10px;
+      margin-top: -10px;
+    }
+
   article.blogbox p,
   article.blogbox .blogboxInfo {
     text-shadow: 1px 1px 0 #fff;
@@ -65,6 +75,11 @@ article.blogbox {
 
       .blogboxInfo .comments {
         background: url("/images/icons/raw/icon-comments.svg") no-repeat 0 0;
+      }
+
+      .blogboxInfo .flattrthis {
+        float: right;
+        padding-top: 4px;
       }
 
 #blogsidebar, #blogsidebar a {

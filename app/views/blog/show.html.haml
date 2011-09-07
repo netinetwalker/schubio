@@ -10,7 +10,8 @@
           = link_to image_tag("/images/icons/raw/icon-delete.svg", {:size => "24x24"}), @blogpost, {:confirm => 'Are you sure?', :method => :delete, :title => "Delete"}
       %h1
         = @blogpost.title
-      = format(@blogpost.content)
+      .blogboxIntro
+        = format(@blogpost.content)
       .blogboxInfo
         .date
           = @blogpost.created_at
@@ -19,6 +20,9 @@
         .tags
           - sort_tags(@blogpost.tags).each do |tag|
             = link_to ["#", tag], blogtag_path(tag)
+        .flattrthis
+          = link_to image_tag("/images/flattr-badge-large.png"), @blogpost, {:title => @blogpost.title, :rel => "Privacy: The first click will load the flattr-button. So you have to click twice."}
+
 
       #blogcommentsContainer
         %h2

@@ -4,18 +4,20 @@
       - @blogposts.each do |blogpost|
         %article{:class => "blogbox"}
           .blogboxHeadline
-            %h1
+            %h1.blogarticleHeadline
               = link_to blogpost.title, blogpost_path(blogpost)
+            .date
+              = blogpost.created_at
           .blogboxIntro
             = format(blogpost.content)
           .blogboxInfo
-            .date
-              = blogpost.created_at
-            .comments
-              = link_to pluralize(blogpost.blogpost_comments.count, "Comment"), blogpost_path(blogpost, :anchor => "blogcommentsContainer")
             .tags
               - sort_tags(blogpost.tags).each do |tag|
                 = link_to ["#", tag], blogtag_path(tag)
+            .comments
+              = link_to pluralize(blogpost.blogpost_comments.count, "Comment"), blogpost_path(blogpost, :anchor => "blogcommentsContainer")
+            .flattrthis
+              = link_to image_tag("/images/flattr-badge-large.png"), blogpost, {:title => blogpost.title, :rel => "Privacy: The first click will load the flattr-button. So you have to click twice."}
     %section{:id => "blogsidebar"}
       - if user_signed_in?
         #adminLinks
