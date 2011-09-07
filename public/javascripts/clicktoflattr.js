@@ -17,7 +17,7 @@
         description += "...";
       }
 
-      var link = $('<a/>').addClass('FlattrButton').text("foo")
+      var link = $('<a/>').addClass('FlattrButton').text(description)
         .attr('href', this.href)
         .attr('title', this.title)
         .attr('lang', 'en')
@@ -27,9 +27,6 @@
         .css('display', 'none');
 
       $(this).parent().html(link);
-
-      // remove any tipsy after the click. dirty workaround!
-      $(".tipsy").remove();
 
       $.getScript('http://api.flattr.com/js/0.6/load.js?mode=auto&button=compact');
     });
