@@ -4,7 +4,7 @@ class BlogpostCommentsController < ApplicationController
   before_filter :authenticate_user!, :except => [:feed, :create]
 
   def feed
-    @blogpost_comments = BlogpostComment.limit(5).order(:created_at => "DESC")
+    @blogpost_comments = BlogpostComment.order("created_at DESC").limit(5)
 
     # is that really needed?
     for comment in @blogpost_comments

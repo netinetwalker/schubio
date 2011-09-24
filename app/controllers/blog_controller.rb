@@ -4,7 +4,7 @@ class BlogController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :feed, :show, :show_tag]
 
   def index
-    @blogposts = Blogpost.paginate(:page => params[:page], :per_page => 5).order('created_at DESC')
+    @blogposts = Blogpost.order("created_at DESC").paginate(:page => params[:page], :per_page => 5).order('created_at DESC')
     @tags = Blogpost.tag_counts_on(:tags)
     if @blogposts
       respond_with @blogposts
@@ -14,7 +14,7 @@ class BlogController < ApplicationController
   end
 
   def feed
-    @blogposts = Blogpost.limit(5).order(:updated_at => "DESC")
+    @blogposts = Blogpost.order("created_at DESC").limit(5)
     respond_with @blogposts do |format|
       format.atom
     end
