@@ -3,7 +3,7 @@ class BlogController < ApplicationController
   respond_to :atom, :only => [:feed]
 
   def index
-    @blogposts = Blogpost.order("created_at DESC").page(params[:page]).per(5)
+    @blogposts = Blogpost.where("is_draft = 0").order("created_at DESC").page(params[:page]).per(5)
     @tags = Blogpost.tag_counts_on(:tags)
     if @blogposts
       respond_with @blogposts
@@ -13,14 +13,14 @@ class BlogController < ApplicationController
   end
 
   def feed
-    @blogposts = Blogpost.order("created_at DESC").limit(5)
+    @blogposts = Blogpost.where("is_draft = 0").order("created_at DESC").limit(5)
     respond_with @blogposts do |format|
       format.atom
     end
   end
 
   def show
-    @blogpost = Blogpost.find(params[:id])
+    @blogpost = Blogpost.where("is_draft = 0").find(params[:id])
     @blogpost_comment = BlogpostComment.new
 
     if @blogpost
@@ -31,7 +31,7 @@ class BlogController < ApplicationController
   end
 
   def show_tag
-    @blogposts = Blogpost.tagged_with(params[:id]).order('created_at DESC').page(params[:page]).per(5)
+    @blogposts = Blogpost.where("is_draft = 0").tagged_with(params[:id]).order('created_at DESC').page(params[:page]).per(5)
     @tags = Blogpost.tag_counts_on(:tags)
 
     if @blogposts

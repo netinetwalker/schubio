@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110925164438) do
+ActiveRecord::Schema.define(:version => 20110925212829) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(:version => 20110925164438) do
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_draft"
   end
 
   create_table "pages", :force => true do |t|
