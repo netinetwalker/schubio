@@ -3,11 +3,6 @@
     %article{:class => "textpage blogpost"}
       - content_for :page_title do
         = @blogpost.title
-      - if user_signed_in?
-        #adminLinks
-          = link_to image_tag("/images/icons/raw/icon-new.svg", {:size => "24x24"}), new_blogpost_path, {:title => "New"}
-          = link_to image_tag("/images/icons/raw/icon-edit.svg", {:size => "24x24"}), edit_blogpost_path(@blogpost), {:title => "Edit"}
-          = link_to image_tag("/images/icons/raw/icon-delete.svg", {:size => "24x24"}), @blogpost, {:confirm => 'Are you sure?', :method => :delete, :title => "Delete"}
       %h1
         = @blogpost.title
       .blogboxIntro
@@ -33,10 +28,6 @@
         - @blogpost.blogpost_comments.each do |comment|
           - unless comment.created_at.nil?
             .blogcommentBox{:id => "comment-" + comment.id.to_s()}
-              - if user_signed_in?
-                #adminLinks
-                  = link_to image_tag("/images/icons/raw/icon-mail.svg", {:size => "24x24"}), "mailto:" + comment.email, {:title => "Write an email"}
-                  = link_to image_tag("/images/icons/raw/icon-delete.svg", {:size => "24x24"}), [@blogpost, comment], {:confirm => 'Are you sure?', :method => :delete, :title => "Delete"}
               .commentAuthorImage
                 = image_tag gravatar_url(comment.email)
               .commentboxRight

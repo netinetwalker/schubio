@@ -1,10 +1,9 @@
 class BlogController < ApplicationController
   respond_to :html
   respond_to :atom, :only => [:feed]
-  before_filter :authenticate_user!, :except => [:index, :feed, :show, :show_tag]
 
   def index
-    @blogposts = Blogpost.order("created_at DESC").paginate(:page => params[:page], :per_page => 5).order('created_at DESC')
+    @blogposts = Blogpost.order("created_at DESC").page(params[:page]).per(5)
     @tags = Blogpost.tag_counts_on(:tags)
     if @blogposts
       respond_with @blogposts
@@ -32,7 +31,7 @@ class BlogController < ApplicationController
   end
 
   def show_tag
-    @blogposts = Blogpost.tagged_with(params[:id]).paginate(:page => params[:page], :per_page => 5).order('created_at DESC')
+    @blogposts = Blogpost.tagged_with(params[:id]).order('created_at DESC').page(params[:page]).per(5)
     @tags = Blogpost.tag_counts_on(:tags)
 
     if @blogposts
@@ -41,46 +40,6 @@ class BlogController < ApplicationController
       end
     else
       raise ActiveRecord::RecordNotFound
-    end
-  end
-
-  def new
-    @blogpost = Blogpost.new
-  end
-
-  def edit
-    @blogpost = Blogpost.find(params[:id])
-    @blogpost.tag_list = @blogpost.tags.join(", ")
-  end
-
-  def create
-    @blogpost = Blogpost.new(params[:blogpost])
-
-    respond_to do |format|
-      if @blogpost.save
-        format.html { redirect_to(@blogpost) }
-      else
-        format.html { render :action => "new" }
-      end
-    end
-  end
-
-  def update
-    @blogpost = Blogpost.find(params[:id])
-
-    if @blogpost.update_attributes(params[:blogpost])
-      redirect_to @blogpost
-    else
-      render :action => "edit"
-    end
-  end
-
-  def destroy
-    @blogpost = Blogpost.find(params[:id])
-    @blogpost.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(blogposts_path) }
     end
   end
 end

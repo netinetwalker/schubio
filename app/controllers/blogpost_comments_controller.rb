@@ -1,8 +1,6 @@
 class BlogpostCommentsController < ApplicationController
   respond_to :html, :atom
 
-  before_filter :authenticate_user!, :except => [:feed, :create]
-
   def feed
     @blogpost_comments = BlogpostComment.order("created_at DESC").limit(5)
 
@@ -24,13 +22,5 @@ class BlogpostCommentsController < ApplicationController
     else
       render 'blog/show'
     end
-  end
-
-  def destroy
-    @blogpost_comment = BlogpostComment.find(params[:id])
-    @blogpost = Blogpost.find(params[:blogpost_id])
-    @blogpost_comment.destroy
-
-    redirect_to @blogpost
   end
 end

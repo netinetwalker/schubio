@@ -19,9 +19,6 @@
             .flattrthis
               = link_to image_tag("/images/flattr-badge-large.png"), blogpost, {:title => blogpost.title}
     %section{:id => "blogsidebar"}
-      - if user_signed_in?
-        #adminLinks
-          = link_to image_tag("/images/icons/raw/icon-new.svg", {:size => "24x24"}), new_blogpost_path, {:title => "New"}
       %nav{:id => "blogtags"}
         %h3
           Tags
@@ -48,4 +45,4 @@
             = link_to "Nice Guy 1", "#"
   .clear
 - content_for :page_pagination do
-  = will_paginate @blogposts
+  = paginate @blogposts
