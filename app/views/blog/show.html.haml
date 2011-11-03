@@ -16,7 +16,7 @@
           - sort_tags(@blogpost.tags).each do |tag|
             = link_to ["#", tag], blogtag_path(tag)
         .flattrthis
-          = link_to image_tag("/images/flattr-badge-large.png"), @blogpost, {:title => @blogpost.title}
+          = link_to image_tag("/images/flattr-badge-large.png"), @blogpost, {:title => @blogpost.title, :rel => "Privacy: The first click will load the flattr-button. So you have to click twice."}
 
 
       #blogcommentsContainer

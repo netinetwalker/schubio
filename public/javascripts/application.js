@@ -10,6 +10,7 @@ function tipsyInit() {
   $("#footboxRight div a").tipsy({gravity: 's'});
   $("#headerSocial a").tipsy({gravity: 'n'});
   $("#adminLinks a").tipsy({gravity: 'n'});
+  $(".flattrthis a").tipsy({gravity: 'n', title: "rel"});
 }
 
 function fancyboxInit() {
