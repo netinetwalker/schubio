@@ -106,15 +106,25 @@ article.blogbox h2,
         }
         
 #content .imgLeft, #content .imgRight,
-#blog .imgLeft, #blog .imgRight {
+#blog .imgLeft, #blog .imgRight, #blog .imgCenter,
+.blogboxIntro .imgLeft, .blogboxIntro .imgRight, .blogboxIntro .imgCenter {
     background-color: #eae3d8;
     border: 1px solid #e6ddd0;
     padding: 10px;
 }
 
     #content .imgLeft img, #content .imgRight img,
-    #blog .imgLeft img, #blog .imgRight img {
+    #blog .imgLeft img, #blog .imgRight img, #blog .imgCenter img,
+    .blogboxIntro .imgLeft, .blogboxIntro .imgRight {
         display: block;
+    }
+    
+    .blogboxIntro .imgLeft, .blogboxIntro .imgRight, .blogboxIntro .imgCenter {
+      text-align: center;
+    }
+    
+    .blogboxIntro .imgCenter {
+      margin-top: 15px;
     }
 
     #content .imgLeft,

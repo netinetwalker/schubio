@@ -13,7 +13,7 @@
 (function($) {
     $.ie6bluescreen = function() {
         // Check if the browser is IE
-        if ($.browser.msie) {
+        if ($.browser.msie && parseInt($.browser.version) < 9) {
         
             // Get width and height of the browser window
             var windowWidth = $(window).width();
@@ -101,8 +101,8 @@
                                       <div id="bluescreen"> \
                                           <h1>Windows</h1> \
                                           <p>The system deteced you are using a webbrowser called Internet Explorer.</p> \
-                                          <p>This website will have some problems with the Internet Explorer, as it is</p> \
-                                          <p>using new technologies like html5, css3 and vector graphics.</p> \
+                                          <p>This website will have some problems with the Internet Explorer, as it</p> \
+                                          <p>is using new technologies like html5, css3 and vector graphics.</p> \
                                           <p>It is recommended for every ie-user to use another browser - <a href="http://www.mozilla.com/firefox/">Firefox<a> \
                                              for example.</p> \
                                           <p>If you still want to continue, press any key <blink>_</blink></p> \

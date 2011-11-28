@@ -8,6 +8,9 @@ Schubio::Application.routes.draw do
 
   # static match for projects-index
   match "projects" => "projects#index", :as => :projects
+  
+  # static match for contact pages
+  match "contact" => "contact#index", :as => :contact
 
   match "blog/tag/:id(/page/:page)" => "blog#show_tag", :as => :blogtag
   match "blog/page/:page" => "blog#index"

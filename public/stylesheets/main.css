@@ -7,7 +7,7 @@
  */
 
 body {
-    background-color: #ecebe2;
+    background: #ecebe2 url("/images/background_noise.png") 0 0 repeat;
     border-top: 12px solid #eae3d8;
     font-family: "DidactGothic", Verdana, Sans;
     line-height: 25px;
@@ -19,6 +19,7 @@ body {
 
 #headerContainer {
     background-color: #f3f1ec;
+    background: #ecebe2 url("/images/background_noise_header.png") 0 0 repeat;
     border-bottom: 1px solid #612b00;
     border-top: 1px solid white;
 }

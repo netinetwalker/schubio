@@ -1,0 +1,23 @@
+#contentContainer
+  %section{:id => "content"}
+    %article{:class => "textpage"}
+      - if flash[:error]
+        %p
+          = flash[:error]
+
+      - content_for :page_title do
+        Contact me
+      - form_tag do
+        = label_tag :name, "Your name"
+        = text_field_tag :name, params[:name]
+
+        = label_tag :email, "Your email"
+        = text_field_tag :email, params[:email]
+
+        = label_tag :subject, "Subject"
+        = text_field_tag :subject, params[:subject]
+
+        = label_tag :message, "Message"
+        = text_area_tag :message, params[:message], :rows => 20
+
+        = submit_tag "Send"

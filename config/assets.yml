@@ -1,7 +1,5 @@
 package_assets: on
-embed_assets: on
 compress_assets: on
-gzip_assets: off
 
 javascripts:
   default:
