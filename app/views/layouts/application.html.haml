@@ -9,8 +9,8 @@
       = page_title yield(:page_title)
     %link{:rel => 'alternate', :type => 'application/atom+xml', :title => 'Dennis Schubert - Blog', :href => blog_feed_path(:format => :atom)}
     %link{:rel => 'alternate', :type => 'application/atom+xml', :title => 'Dennis Schubert - Blog-comments', :href => blog_comments_feed_path(:format => :atom)}
-    = include_stylesheets :default, :media => 'all'
-    = include_javascripts :default
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
     = csrf_meta_tag
   %body
     - flash.each do |name, msg|
@@ -27,9 +27,9 @@
                 blog, projects and nerdiness
             #headerSocialContainer
               #headerSocial
-                = link_to image_tag("/images/icons/raw/icon-twitter.svg", :size => "48x48"), "http://twitter.com/denschub", {:target => "_blank", :class => "twitterIcon", :title => "@denschub on twitter"}
-                = link_to image_tag("/images/icons/raw/icon-diaspora.svg", :size => "48x48"), "https://pod.geraspora.de/people/12", {:target => "_blank", :class => "diasporaIcon", :title => "Dennis Schubert on Diaspora"}
-                = link_to image_tag("/images/icons/raw/icon-rss.svg", :size => "48x48"), blog_feed_path(:format => :atom), {:target => "_blank", :class => "rssIcon", :title => "Blog-feed (Atom)"}
+                = link_to image_tag("icons/raw/icon-twitter.svg", :size => "48x48"), "http://twitter.com/denschub", {:target => "_blank", :class => "twitterIcon", :title => "@denschub on twitter"}
+                = link_to image_tag("icons/raw/icon-diaspora.svg", :size => "48x48"), "https://pod.geraspora.de/people/12", {:target => "_blank", :class => "diasporaIcon", :title => "Dennis Schubert on Diaspora"}
+                = link_to image_tag("icons/raw/icon-rss.svg", :size => "48x48"), blog_feed_path(:format => :atom), {:target => "_blank", :class => "rssIcon", :title => "Blog-feed (Atom)"}
         #navBarContainer
           %nav{:id => "navBar"}
             #navBarLeft
@@ -83,9 +83,9 @@
                 And I love web-development.
             %section{:id => "footboxRight", :class => "footerBox"}
               %div
-                = link_to image_tag("/images/icons/raw/cc-icon-cc.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "The content is licensed under a Creative Commons-license"}
-                = link_to image_tag("/images/icons/raw/cc-icon-by.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "The content can be reused with attribution"}
-                = link_to image_tag("/images/icons/raw/cc-icon-sa.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "The content can be shared under the same or similar license"}
+                = link_to image_tag("icons/raw/cc-icon-cc.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "The content is licensed under a Creative Commons-license"}
+                = link_to image_tag("icons/raw/cc-icon-by.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "The content can be reused with attribution"}
+                = link_to image_tag("icons/raw/cc-icon-sa.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "The content can be shared under the same or similar license"}
     :plain
       <!-- Piwik -->
       <script type="text/javascript">

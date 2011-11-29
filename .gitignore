@@ -1,6 +1,7 @@
+.bundle
 config/database.yml
 config/application.yml
-log/*
-tmp/*
-public/assets/*
-public/uploads/*
+db/*.sqlite3
+log/*.log
+tmp/
+.sass-cache/

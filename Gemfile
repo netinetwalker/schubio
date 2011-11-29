@@ -1,19 +1,32 @@
 source 'http://rubygems.org'
 
-gem 'mysql2', '0.2.6'
-gem 'rails', '3.0.3'
-gem 'rake', '0.8.7'
 gem 'bundler'
-gem 'haml', '3.1.2'
-gem 'sass', '3.1.4'
-gem 'jammit', '0.5.4'
+
+gem 'rails', '3.1.0'
 gem 'jquery-rails'
-gem 'RedCloth', '4.2.7'
-gem 'coderay', '0.9.8'
-gem 'devise', '1.4.2'
-gem 'settingslogic', '2.0.6'
 gem 'passenger'
+
+gem 'mysql2'
+gem 'devise'
+gem 'settingslogic'
 gem 'acts-as-taggable-on', :git => 'git://github.com/denschub/acts-as-taggable-on.git'
-gem 'activeadmin'
-gem 'kaminari', '0.12.4'
+
+gem 'haml'
+gem 'RedCloth'
+gem 'coderay'
+gem 'kaminari'
 gem 'formtastic'
+
+gem 'activeadmin'
+gem 'meta_search', '>= 1.1.0.pre'
+
+group :assets do
+  gem 'sass-rails', "  ~> 3.1.0"
+  gem 'coffee-rails', "~> 3.1.0"
+  gem 'uglifier'
+end
+
+
+# ToDo ;-)
+# gem 'unicorn'
+# gem 'capistrano'
