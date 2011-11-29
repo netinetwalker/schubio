@@ -1,4 +1,6 @@
 .bundle
+.idea/
+*.ids
 config/database.yml
 config/application.yml
 db/*.sqlite3
