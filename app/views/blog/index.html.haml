@@ -13,7 +13,7 @@
           .blogboxInfo
             .tags
               - sort_tags(blogpost.tags).each do |tag|
-                = link_to ["#", tag], blogtag_path(tag)
+                = link_to ["#", tag].join, blogtag_path(tag)
             .comments
               = link_to pluralize(blogpost.blogpost_comments.count, "Comment"), blogpost_path(blogpost, :anchor => "blogcommentsContainer")
             .flattrthis
