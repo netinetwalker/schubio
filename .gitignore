@@ -4,6 +4,8 @@
 config/database.yml
 config/application.yml
 db/*.sqlite3
-log/*.log
+log/*
+public/assets/
+public/uploads/
 tmp/
 .sass-cache/
