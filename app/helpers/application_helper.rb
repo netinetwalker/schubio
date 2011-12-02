@@ -31,4 +31,11 @@ module ApplicationHelper
       return pagination
     end
   end
+
+  def age_in_completed_years (bd, d = Date.today)
+    a = d.year - bd.year
+    a = a - 1 if bd.month >  d.month or (bd.month >= d.month and bd.day > d.day)
+    a
+  end
+
 end
