@@ -6,11 +6,11 @@
           .blogboxHeadline
             %h1.blogarticleHeadline
               = link_to blogpost.title, blogpost_path(blogpost)
-            .date
-              = blogpost.created_at
           .blogboxIntro
             = format(blogpost.content)
           .blogboxInfo
+            .date
+              = blogpost.created_at.strftime("%Y-%m-%d")
             .tags
               - sort_tags(blogpost.tags).each do |tag|
                 = link_to ["#", tag].join, blogtag_path(tag)
