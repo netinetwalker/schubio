@@ -14,4 +14,14 @@ ActiveAdmin.register Blogpost do
 
     default_actions
   end
+
+    form do |f|
+    f.inputs do
+      f.input :title, :as => :string
+      f.input :tag_list, :as => :string
+      f.input :content, :as => :text
+      f.input :is_draft, :as => :boolean
+    end
+    f.buttons
+  end
 end
