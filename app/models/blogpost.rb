@@ -6,11 +6,11 @@ class Blogpost < ActiveRecord::Base
     "#{id}-#{title.parameterize}"
   end
 
-  def tag_list
+  def tags_string
     self.tags.join(", ")
   end
 
-  def tag_list=(tag_list)
-    self.tag_list = tag_list
+  def tags_string=(tags)
+    self.tag_list = tags
   end
 end

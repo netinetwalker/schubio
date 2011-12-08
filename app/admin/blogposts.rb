@@ -18,7 +18,7 @@ ActiveAdmin.register Blogpost do
   form do |f|
     f.inputs do
       f.input :title, :as => :string
-      f.input :tag_list, :as => :string
+      f.input :tags_string, :as => :string
       f.input :content, :as => :text
       f.input :is_draft, :as => :boolean
     end
