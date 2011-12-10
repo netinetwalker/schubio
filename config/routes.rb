@@ -6,8 +6,7 @@ Schubio::Application.routes.draw do
   # routes for users
   devise_for :users, :controllers => {:registrations => "registrations"}
 
-  # static match for projects-index
-  match "projects" => "projects#index", :as => :projects
+  resources :projects
   
   # static match for contact pages
   match "contact" => "contact#index", :as => :contact

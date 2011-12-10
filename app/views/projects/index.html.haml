@@ -3,43 +3,16 @@
 
 #cboxesContainer
   %section{:id => "cboxes"}
-    %article{:class => "cbox"}
-      .cboxImage
-        = link_to "about_this_website" do
-          .cboxTypeLabel
-            Schubio
-            %span.cboxTypeRight
-              Ruby on Rails
-          = image_tag("frontPage/teaserPage.svg")
-          %h3.cboxCaption
-            Schubio is the "codename" for the system running that website.
-
-    %article{:class => "cbox"}
-      .cboxImage
-        = link_to("http://github.com/diaspora/diaspora", :target => "_blank") do
-          .cboxTypeLabel
-            Diaspora
-            %span.cboxTypeRight
-              Ruby on Rails
-          = image_tag("frontPage/teaserDiaspora.svg")
-          %h3.cboxCaption
-            I am helping with development, marketing and support.
-
-    %article{:class => "cbox"}
-      .cboxImage
-        = link_to("http://github.com/denschub/bottle-linkshorter", :target => "_blank") do
-          .cboxTypeLabel
-            Bottle-Linkshorter
-            %span.cboxTypeRight
-              Python
-          = image_tag("projects/teaserLinkShorter.svg")
-          %h3.cboxCaption
-            A little linkshorter based on bottle I am using on dsx.cc.
+    - @projects.each do |project|
+      %article{:class => "cbox"}
+        .cboxImage
+          = link_to project do
+            .cboxTypeLabel
+              = project.title
+              %span.cboxTypeRight
+                = project.category
+            = image_tag(project.teaser_image)
+            %h3.cboxCaption
+              = project.short_description
 
     .clear
-
-#contentContainer
-  %section{:id => "content"}
-    %article{:class => "textpage"}
-      %p
-        This page is a work in progress. I'll add more information soon.

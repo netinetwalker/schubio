@@ -34,12 +34,13 @@
 #blog h1, #blog h2,
 article.blogbox h1,
 article.blogbox h2,
-#blogsidebar h3 {
+#blogsidebar h3,
+#project h1, #project h2, #projectSidebar h3 {
     font-weight: bold;
     text-shadow: 1px 1px 0 #fff;
 }
 
-    #content h1, #blog h1 a, article.blogbox h1, article.blogbox h1 a {
+    #content h1, #blog h1 a, article.blogbox h1, article.blogbox h1 a, #project h1 {
         font-size: 36px;
         line-height: 54px;
         margin-top: 20px;
@@ -49,14 +50,14 @@ article.blogbox h2,
     }
     
     #content h2, #blog h2, article.blogbox h2,
-    #blogsidebar h3 {
+    #blogsidebar h3, #project h2, #projectSidebar h3 {
         font-size: 24px;
         line-height: 30px;
         margin-top: 42px;
         margin-bottom: 15px;
     }
     
-        #content h2 a, #blog h2 a {
+        #content h2 a, #blog h2 a, #project h2 {
             color: #612B00;
             text-decoration: none;
         }
