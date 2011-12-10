@@ -2,31 +2,31 @@
  * Content-Styles
  */
 
-#content, #blog {
+#content, #blog, #project {
     color: #612B00;
 }
 
-#content em, .cbox em {
+#content em, .cbox em, #project em {
   font-style: italic;
 }
 
-#content abbr, acronym {
+abbr, acronym {
   border-bottom: 1px dotted;
 }
 
-#content sup, #content sub {
+#content sup, #content sub, #project sup, #project sub {
   font-size: 0.6em;
 }
 
-#content sup {
+#content sup, #project sup {
   vertical-align: super;
 }
 
-#content sub {
+#content sub, #project sub {
   vertical-align: sub;
 }
 
-#content strong {
+#content strong, #project strong {
   font-weight: bold;
 }
  
@@ -62,37 +62,43 @@ article.blogbox h2,
             text-decoration: none;
         }
  
-#content p, #blog p, .blogbox p {
+#content p, #blog p, .blogbox p, #project p {
     margin-top: 15px;
     padding-left: 20px;
     text-shadow: 1px 1px 0 #fff;
 }
 
-    #content p a, #content li a, #blog p a, .blogbox p a {
+    #content p a, #content li a, #blog p a, .blogbox p a,
+    #project p a, #project li a {
         color: #612B00;
     }
     
-        #content p a:hover, #content li a:hover, #blog p a:hover, .blogbox p a:hover {
+        #content p a:hover, #content li a:hover, #blog p a:hover, .blogbox p a:hover,
+        #project p a:hover, #project li a:hover {
             text-decoration: none;
         }
         
 #content ul, #content ol,
 #blog ul, #blog ol,
-.blogbox ul, .blogbox ol{
+.blogbox ul, .blogbox ol,
+#project ul, #project ol {
     margin-top: 15px;
     padding-left: 50px;
     text-shadow: 1px 1px 0 #fff;
 }
 
-    #content ul, #blog ul, .blogbox ul {
+    #content ul, #blog ul, .blogbox ul,
+    #project ul {
         list-style: disc outside;
     }
     
-    #content ol, #blog ol, .blogbox ol {
+    #content ol, #blog ol, .blogbox ol,
+    #project ol {
         list-style: decimal outside;
     }
     
-        #content ol ol, #blog ol ol, .blogbox ol ol {
+        #content ol ol, #blog ol ol, .blogbox ol ol,
+        #project ol ol {
             list-style-type: lower-latin;
         }
     
@@ -101,22 +107,20 @@ article.blogbox h2,
         #blog ul ul, #blog ul ol,
         #blog ol ul, #blog ol ol,
         .blogbox ol ul, .blogbox ol ol,
-        .blogbox ul ul, .blogbox ul ol {
+        .blogbox ul ul, .blogbox ul ol,
+        #project ul ul, #project ul ol,
+        #project ol ul, #project ol ol {
             margin-top: 0px;
             padding-left: 30px;
         }
         
-#content .imgLeft, #content .imgRight,
-#blog .imgLeft, #blog .imgRight, #blog .imgCenter,
-.blogboxIntro .imgLeft, .blogboxIntro .imgRight, .blogboxIntro .imgCenter {
+.imgLeft, .imgRight, .imgCenter {
     background-color: #eae3d8;
     border: 1px solid #e6ddd0;
     padding: 10px;
 }
 
-    #content .imgLeft img, #content .imgRight img,
-    #blog .imgLeft img, #blog .imgRight img, #blog .imgCenter img,
-    .blogboxIntro .imgLeft, .blogboxIntro .imgRight {
+    .imgLeft img,.imgRight img, imgCenter img {
         display: block;
     }
     
@@ -128,31 +132,32 @@ article.blogbox h2,
       margin-top: 15px;
     }
 
-    #content .imgLeft,
-    #blog .imgLeft {
+    .imgLeft {
         float: left;
         margin: 10px 20px;
     }
     
-    #content .imgRight,
-    #blog .imgRight {
+    .imgRight {
         float: right;
         margin: 10px 0px 10px 20px;
     }
     
 #content table,
-#blog table {
+#blog table,
+#project table {
     margin-left: 20px;
 }
     
     #content th, #content td,
-    #blog th, #blog td {
+    #blog th, #blog td,
+    #project th, #project td {
         border: 1px solid #612B00;
         padding: 1px 4px;
     }
 
         #content th,
-        #blog th {
+        #blog th,
+        #project th {
             background-color: #9c5820;
             color: #fff;
             text-align: left;
