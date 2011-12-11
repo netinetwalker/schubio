@@ -39,10 +39,6 @@ article.blogbox {
     text-shadow: 1px 1px 0 #fff;
   }
 
-  article.blogbox h2 {
-    margin-top: 0px;
-  }
-
     article.blogbox h2 a {
       color: #612b00;
       text-decoration: none;
