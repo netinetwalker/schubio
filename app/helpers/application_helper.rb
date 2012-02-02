@@ -10,7 +10,7 @@ module ApplicationHelper
   def coderay_dressed(text)
     text.gsub!(/\s*@@@(\w*?)\s+(.+?)\s*@@@\s*/m) do
       $1 != '' ? @lang = $1 : @lang = 'ruby' 
-      code = CodeRay.highlight($2, @lang, :css => :class)
+      code = CodeRay.scan($2, @lang, :css => :class)
       "\n\n<notextile>#{code.strip}</notextile>\n\n"
     end
     return text.html_safe
