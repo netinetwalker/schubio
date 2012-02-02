@@ -103,7 +103,7 @@
                                           <p>The system deteced you are using a webbrowser called Internet Explorer.</p> \
                                           <p>This website will have some problems with the Internet Explorer, as it</p> \
                                           <p>is using new technologies like html5, css3 and vector graphics.</p> \
-                                          <p>It is recommended for every ie-user to use another browser - <a href="http://www.mozilla.com/firefox/">Firefox<a> \
+                                          <p>It is recommended for every ie-user to use another browser - <a href="http://www.mozilla.com/firefox/">Firefox</a> \
                                              for example.</p> \
                                           <p>If you still want to continue, press any key <blink>_</blink></p> \
                                       </div> \
