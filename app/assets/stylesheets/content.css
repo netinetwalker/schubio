@@ -68,12 +68,16 @@ article.blogbox h2,
     text-shadow: 1px 1px 0 #fff;
 }
 
-    #content p a, #content li a, #blog p a, .blogbox p a,
+    #content p a, #content li a,
+    #blog p a, .blogbox p a,
+    #blog li a, .blogbox li a,
     #project p a, #project li a {
         color: #612B00;
     }
     
-        #content p a:hover, #content li a:hover, #blog p a:hover, .blogbox p a:hover,
+        #content p a:hover, #content li a:hover,
+        #blog p a:hover, .blogbox p a:hover,
+        #blog li a:hover, .blogbox li a:hover,
         #project p a:hover, #project li a:hover {
             text-decoration: none;
         }
