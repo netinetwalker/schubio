@@ -81,7 +81,7 @@ article.blogbox h2,
         #project p a:hover, #project li a:hover {
             text-decoration: none;
         }
-#content blockquote, #blog blockquote {
+#content blockquote, #blog blockquote, .blogbox blockquote {
     font-style: italic;
     padding-left: 45px;
 }
