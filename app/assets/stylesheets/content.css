@@ -2,40 +2,45 @@
  * Content-Styles
  */
 
-#main {
+#content, #blog, #project {
     color: #612B00;
 }
 
-em {
+#content em, .cbox em, #project em {
   font-style: italic;
-}
-
-strong {
-  font-weight: bold;
 }
 
 abbr, acronym {
   border-bottom: 1px dotted;
 }
 
-sup, sub{
+#content sup, #content sub, #project sup, #project sub {
   font-size: 0.6em;
 }
 
-    sup {
-      vertical-align: super;
-    }
+#content sup, #project sup {
+  vertical-align: super;
+}
 
-    sup {
-      vertical-align: sub;
-    }
+#content sub, #project sub {
+  vertical-align: sub;
+}
 
-h1, h2, h3 {
+#content strong, #project strong {
+  font-weight: bold;
+}
+ 
+#content h1, #content h2,
+#blog h1, #blog h2,
+article.blogbox h1,
+article.blogbox h2,
+#blogsidebar h3,
+#project h1, #project h2, #projectSidebar h3 {
     font-weight: bold;
     text-shadow: 1px 1px 0 #fff;
 }
 
-    h1, h1 a {
+    #content h1, #blog h1 a, article.blogbox h1, article.blogbox h1 a, #project h1 {
         font-size: 36px;
         line-height: 54px;
         margin-top: 20px;
@@ -44,57 +49,75 @@ h1, h2, h3 {
         color: #612B00;
     }
     
-    h2, h3 {
+    #content h2, #blog h2, article.blogbox h2,
+    #blogsidebar h3, #project h2, #projectSidebar h3 {
         font-size: 24px;
         line-height: 30px;
         margin-top: 42px;
         margin-bottom: 15px;
     }
     
-        h2 a {
+        #content h2 a, #blog h2 a, #project h2 {
             color: #612B00;
             text-decoration: none;
         }
  
-p {
+#content p, #blog p, .blogbox p, #project p {
     margin-top: 15px;
     padding-left: 20px;
     text-shadow: 1px 1px 0 #fff;
 }
 
-    p a, li a {
+    #content p a, #content li a,
+    #blog p a, .blogbox p a,
+    #blog li a, .blogbox li a,
+    #project p a, #project li a {
         color: #612B00;
     }
     
-        p a:hover, li a:hover {
+        #content p a:hover, #content li a:hover,
+        #blog p a:hover, .blogbox p a:hover,
+        #blog li a:hover, .blogbox li a:hover,
+        #project p a:hover, #project li a:hover {
             text-decoration: none;
         }
-
-blockquote {
+#content blockquote, #blog blockquote, .blogbox blockquote {
     font-style: italic;
     padding-left: 45px;
 }
         
-ul, ol {
+#content ul, #content ol,
+#blog ul, #blog ol,
+.blogbox ul, .blogbox ol,
+#project ul, #project ol {
     margin-top: 15px;
     padding-left: 50px;
     text-shadow: 1px 1px 0 #fff;
 }
 
-    ul {
+    #content ul, #blog ul, .blogbox ul,
+    #project ul {
         list-style: disc outside;
     }
     
-    ol {
+    #content ol, #blog ol, .blogbox ol,
+    #project ol {
         list-style: decimal outside;
     }
     
-        ol ol{
+        #content ol ol, #blog ol ol, .blogbox ol ol,
+        #project ol ol {
             list-style-type: lower-latin;
         }
     
-        ul ul, ul ol,
-        ol ul, ol ol {
+        #content ul ul, #content ul ol,
+        #content ol ul, #content ol ol,
+        #blog ul ul, #blog ul ol,
+        #blog ol ul, #blog ol ol,
+        .blogbox ol ul, .blogbox ol ol,
+        .blogbox ul ul, .blogbox ul ol,
+        #project ul ul, #project ul ol,
+        #project ol ul, #project ol ol {
             margin-top: 0px;
             padding-left: 30px;
         }
@@ -127,16 +150,22 @@ ul, ol {
         margin: 10px 0px 10px 20px;
     }
     
-table {
+#content table,
+#blog table,
+#project table {
     margin-left: 20px;
 }
     
-    th, td {
+    #content th, #content td,
+    #blog th, #blog td,
+    #project th, #project td {
         border: 1px solid #612B00;
         padding: 1px 4px;
     }
 
-       th {
+        #content th,
+        #blog th,
+        #project th {
             background-color: #9c5820;
             color: #fff;
             text-align: left;
