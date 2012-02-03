@@ -17,7 +17,7 @@ gem "coffee-rails", "~> 3.2.2"
 gem "uglifier", "~> 1.2.3"
 gem "haml", "~> 3.1.4"
 gem "RedCloth", "~> 4.2.9"
-gem "coderay", "~> 1.0.5"
+gem "coderay", "~> 0.9.8"
 gem "kaminari", "~> 0.13.0"
 gem "formtastic", "~> 2.0.2"
 
