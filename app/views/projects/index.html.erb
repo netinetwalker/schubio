@@ -1,0 +1,38 @@
+<%- content_for :page_title do %>
+  Projects
+<% end %>
+
+<aside class="ym-g25 ym-gr">
+  <div class="ym-gbox-right ym-clearfix">
+    <nav class="ym-vlist">
+      <h6 class="ym-vtitle">Projects</h6>
+      <ul>
+        <%- @projects.each do |project| %>
+          <li><%= link_to project.title, project %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+<section class="ym-g75 ym-gl content">
+  <div class="ym-gbox-left ym-clearfix">
+    <article>
+      <%= format(@introduction.content) %>
+    </article>
+    <article>
+      <h2>My projects</h2>
+      <ul>
+        <%- @projects.each do |project| %>
+          <li>
+            <p>
+              <strong><%= project.title %></strong> (<%= project.category %>)<br>
+              <%= project.short_description %>
+              <%= link_to "Read more.", project %>
+            </p>
+          </li>
+        <% end %>
+      </ul>
+    </article>
+  </div>
+</section>

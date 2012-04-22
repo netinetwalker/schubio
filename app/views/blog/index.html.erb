@@ -1,0 +1,46 @@
+<aside class="ym-g25 ym-gr">
+  <div class="ym-gbox-right ym-clearfix">
+    <nav class="ym-vlist" id="tagnavigation">
+      <h6 class="ym-vtitle">Tags</h6>
+      <ul>
+        <%- sort_tags(@tags).each do |tag| %>
+          <li><%= link_to tag, blogtag_path(tag) %></li>
+        <% end %>
+      </ul>
+    </nav>
+
+    <nav class="ym-vlist" id="feednavigation">
+      <h6 class="ym-vtitle">Feeds</h6>
+      <ul>
+        <li><%= link_to "Blog articles", blog_feed_path(:format => "atom") %></li>
+        <li><%= link_to "Blog comments", blog_comments_feed_path(:format => "atom") %></li>
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+<section class="ym-g75 ym-gl content">
+  <div class="ym-gbox-left ym-clearfix">
+    <%- @blogposts.each do |blogpost| %>
+      <article class="blogpost">
+        <h1><%= link_to blogpost.title, blogpost_path(blogpost) %></h1>
+        <p><%= format(blogpost.content) %></p>
+
+        <div class="box info">
+          <p>
+            Posted on <%= blogpost.created_at.strftime("%Y-%m-%d") %>.
+            <%= link_to pluralize(blogpost.blogpost_comments.count, "Comment"), blogpost_path(blogpost, :anchor => "blogcommentsContainer") %>.
+            Tagged with
+            <%- sort_tags(blogpost.tags).each do |tag| %>
+              <%= link_to ["#", tag].join, blogtag_path(tag) %>
+            <% end %>
+          </p>
+        </div>
+      </article>
+    <% end %>
+  </div>
+</section>
+
+<%- content_for :page_pagination do %>
+  <%= paginate @blogposts %>
+<% end %>

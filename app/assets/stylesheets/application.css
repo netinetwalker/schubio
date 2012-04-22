@@ -2,22 +2,22 @@
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
-
+ *
  *= require_self
-
- *= require ../../../vendor/assets/stylesheets/coderay.css
- *= require ../../../vendor/assets/stylesheets/facebox.css
- *= require ../../../vendor/assets/stylesheets/tipsy.css
- *= require ../../../vendor/assets/stylesheets/tipsy.mod.css
-
- *= require reset.css
- *= require webfonts.css
- *= require main.css
- *= require navigation.css
- *= require cboxes.css
- *= require formulars.css
- *= require content.css
- *= require blog.css
- *= require projects.css
- *= require coderay.css
-*/
+ *
+ *= require coderay
+ *= require facebox
+ *= require tipsy
+ *= require tipsy.mod
+ *
+ *= require yaml/core/base
+ *= require yaml/navigation/hlist
+ *= require yaml/navigation/vlist
+ *= require yaml/forms/gray-theme
+ *= require yaml/screen/typography
+ *= require yaml/screen/screen-FULLPAGE-layout
+ *= require yaml/print/print
+ *
+ *= require webfonts
+ *= require yaml.customization
+ */

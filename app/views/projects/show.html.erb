@@ -1,0 +1,25 @@
+<%- content_for :page_title do %>
+  <%= ["Project: ", @project.title].join %>
+<% end %>
+
+<aside class="ym-g25 ym-gr">
+  <div class="ym-gbox-right ym-clearfix">
+    <h3><%= @project.title %></h3>
+    <p><%= @project.short_description %></p>
+
+    <%- if @project.source_link %>
+      <h3>Source</h3>
+      <p>
+        <%= form_source_link(@project.source_link) %>
+      </p>
+    <% end %>
+  </div>
+</aside>
+
+<section class="ym-g75 ym-gl content">
+  <div class="ym-gbox-left ym-clearfix">
+    <article>
+      <%= format(@project.description) %>
+    </article>
+  </div>
+</section>

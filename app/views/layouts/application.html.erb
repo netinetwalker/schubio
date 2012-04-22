@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Dennis Schuberts personal website with a blog, projects and some other stuff">
+  <meta name="author" content="Dennis Schubert">
+  <meta name="shortcut icon" href="/favicon.ico">
+
+  <title><%= page_title yield(:page_title) %></title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <header>
+    <%- flash.each do |name, msg| %>
+      <div id="flash_<%= name %>">
+        <%= msg %>
+      </div>
+    <% end %>
+
+    <div class="ym-wrapper">
+      <div class="ym-wbox">
+        <section class="ym-grid linearize-level-1">
+          <div class="ym-g75 ym-gl">
+            <h1><%= link_to "Dennis Schubert", root_path %></h1>
+          </div>
+          <div class="ym-g25 ym-gr">
+            <div class="box info sociallinks">
+              <p>
+                <%= link_to image_tag("icons/raw/icon-twitter.svg", :size => "48x48"), "https://twitter.com/denschub", {:target => "_blank", :class => "twitterIcon", :title => "@denschub on twitter"} %>
+                <%= link_to image_tag("icons/raw/icon-diaspora.svg", :size => "48x48"), "https://pod.geraspora.de/u/denschub", {:target => "_blank", :class => "diasporaIcon", :title => "Dennis Schubert on Diaspora"} %>
+                <%= link_to image_tag("icons/raw/icon-rss.svg", :size => "48x48"), blog_feed_path(:format => :atom), {:target => "_blank", :class => "rssIcon", :title => "Blog-feed (Atom)"} %>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <nav id="nav">
+    <div class="ym-wrapper">
+      <div class="ym-hlist">
+        <ul>
+          <li><%= link_to "Blog", blogposts_path %></li>
+          <li><%= link_to "Profile", page_clean_path({:id => "about_me"}) %></li>
+          <li><%= link_to "Projects", projects_path %></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="main">
+    <div class="ym-wrapper">
+      <div class="ym-wbox">
+        <section class="ym-grid linearize-level-1">
+          <%= yield %>
+        </section>
+      </div>
+      <%= page_pagination yield(:page_pagination) %>
+    </div>
+  </div>
+  <footer>
+    <div class="ym-wrapper">
+      <div class="ym-wbox">
+        <section class="ym-grid">
+          <section class="ym-g50 ym-gl">
+            <div class="ym-gbox-left ym-clearfix">
+              <p>
+                <%= link_to "Home", root_path %> |
+                <%= link_to "Imprint", page_clean_path({:id => "imprint"}) %>
+              </p>
+            </div>
+          </section>
+          <section class="ym-g50 ym-gr">
+            <div class="ym-gbox-right ym-clearfix">
+              <p class="cc_icons">
+                <%= link_to image_tag("icons/raw/cc-icon-cc.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "The content is licensed under a Creative Commons-license"} %>
+                <%= link_to image_tag("icons/raw/cc-icon-by.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "The content can be reused with attribution"} %>
+                <%= link_to image_tag("icons/raw/cc-icon-sa.svg", :size => "30x30"), "http://creativecommons.org/licenses/by-sa/3.0/deed.de", {:target => "_blank", :title => "The content can be shared under the same or similar license"} %>
+              </p>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Piwik -->
+    <script type="text/javascript">
+      var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.dennis-schubert.de/" : "http://piwik.dennis-schubert.de/");
+      document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+    </script><script type="text/javascript">
+      try {
+        var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+        piwikTracker.trackPageView();
+        piwikTracker.enableLinkTracking();
+      } catch( err ) {}
+    </script>
+    <noscript>
+      <p>
+        <img src="http://piwik.dennis-schubert.de/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="">
+      </p>
+    </noscript>
+  <!-- End Piwik Tracking Code -->
+</body>
+</html>
+

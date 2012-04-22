@@ -1,0 +1,141 @@
+$base-color: darken(#E58F0D, 10%);
+$menu-base-color: #292821;
+
+$invers-color: #fff;
+
+body, h1, h2, h3, h4, h5, h6, .label {
+  font-family: 'GandhiSans', Arial, sans-serif;
+}
+
+body {
+  border-top: 12px solid lighten(#E58F0D, 45%);
+  background: transparent url(background_noise.png) repeat 0 0;
+}
+
+p, ul {
+  font-size: 1.15em;
+}
+
+header {
+  background-color: transparent;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid darken($base-color, 20%);
+
+  .sociallinks {
+    padding: 0.5em 0.5em 0 0.5em;
+
+    a {
+      display: inline-block;
+      height: 48px;
+
+      &:hover, &:focus {
+        background-color: transparent;
+      }
+
+      &.rssIcon {
+        float: right;
+      }
+    }
+  }
+
+  h1 {
+    margin-top: 14px;
+
+    a:hover, a:focus {
+      background-color: transparent;
+      color: $base-color;
+    }
+  }
+
+  .box {
+    margin-top: 0px;
+  }
+}
+
+header h1, h1, h2, h3, h4, h5, h6 {
+  color: $base-color;
+}
+
+a {
+  color: $base-color;
+
+  &:hover, &:focus {
+    background-color: $base-color;
+    color: $invers-color;
+  }
+}
+
+article.blogpost {
+  padding-bottom: 15px;
+}
+
+nav#nav {
+  background-color: $menu-base-color;
+  border-bottom: 1px solid darken($menu-base-color, 20%);
+  border-top: 1px solid lighten($menu-base-color, 20%);
+}
+
+.ym-hlist {
+  background-color: $menu-base-color;
+
+  ul {
+    font-size: 1.35em;
+    padding: 0.1em 0.6em;
+
+    li a, li a:hover {
+      color: $invers-color;
+    }
+
+    li a:hover {
+      background-color: $base-color;
+    }
+  }
+}
+
+.ym-vlist {
+  background-color: transparent;
+
+  li {
+    background-color: transparent;
+
+    a:focus, a:hover, a:active {
+      background-color: $base-color;
+      color: $invers-color;
+    }
+  }
+
+  .ym-vtitle, .ym-vtitle + ul {
+    border-color: $menu-base-color;
+    background-color: transparent;
+  }
+}
+
+.comment {
+  .bordered {
+    margin-top: 0;
+  }
+
+  h3 {
+    margin-top: 0.3em;
+  }
+}
+
+footer {
+  .cc_icons {
+    text-align: right;
+
+    a {
+      display: inline-block;
+    }
+
+    a:hover, a:focus {
+      background-color: transparent;
+    }
+  }
+}
+
+@media screen and ( max-width: 760px ) {
+  header h1 {
+    padding-bottom: 15px;
+  }
+}

@@ -1,6 +1,0 @@
-#contentContainer
-  %section{:id => "content"}
-    %article{:class => "textpage"}
-      - content_for :page_title do
-        = @page.title
-      = format(@page.content)

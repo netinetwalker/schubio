@@ -3,13 +3,7 @@ Schubio::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  # routes for users
-  devise_for :users, :controllers => {:registrations => "registrations"}
-
   resources :projects
-  
-  # static match for contact pages
-  match "contact" => "contact#index", :as => :contact
 
   match "blog/tag/:id(/page/:page)" => "blog#show_tag", :as => :blogtag
   match "blog/page/:page" => "blog#index"
@@ -24,6 +18,6 @@ Schubio::Application.routes.draw do
   match ":id" => "pages#show", :as => :page_clean
 
   # default- and 404-route
-  root :to => "home#index"
+  root :to => "blog#index"
   match '*a', :to => 'application#render_404'
 end

@@ -1,0 +1,76 @@
+<%- content_for :page_title do %>
+  <%= @blogpost.title %>
+<% end %>
+
+<section class="content">
+  <div class="ym-clearfix">
+    <article class="blogpost">
+      <h1><%= @blogpost.title %></h1>
+      <p><%= format(@blogpost.content) %></p>
+
+      <div class="box info">
+        <p>
+          Posted on <%= @blogpost.created_at.strftime("%Y-%m-%d") %>.
+          <%= link_to pluralize(@blogpost.blogpost_comments.count, "Comment"), blogpost_path(@blogpost, :anchor => "blogcommentsContainer") %>.
+          Tagged with
+          <%- sort_tags(@blogpost.tags).each do |tag| %>
+            <%= link_to ["#", tag].join, blogtag_path(tag) %>
+          <% end %>
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="comments">
+  <h2>Comments</h2>
+  <%- if @blogpost.blogpost_comments.empty? %>
+    <h3>No comments yet. :-(</h3>
+  <% end %>
+
+  <%- @blogpost.blogpost_comments.each do |comment| %>
+    <%- unless comment.created_at.nil? %>
+      <div class="box comment" id="comment-<%= comment.id.to_s() %>">
+        <div class="commentAuthorImage float-left">
+          <%= image_tag gravatar_url(comment.email), :class => "bordered" %>
+        </div>
+
+        <div class="commentRight">
+          <h3><%= comment.author %></h3>
+          <%= link_to comment.created_at, {:anchor => "comment-" + comment.id.to_s()} %>
+        </div>
+
+        <div class="commentContent">
+          <%= comment_format(comment.content) %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</section>
+
+<section class="ym-gbox">
+  <h2>Add comment</h2>
+
+  <%= form_for([@blogpost, @blogpost_comment], :html => {:class=>"ym-form linearize-form ym-full"}, :url => blogpost_blogpost_comments_path(@blogpost, @blogpost_comment, :anchor => "new_blogpost_comment")) do |f| %>
+    <div class="ym-fbox-text">
+      <%= f.label :author, "Your name" %>
+      <%= f.text_field :author %>
+    </div>
+    <div class="ym-fbox-text">
+      <%= f.label :email, "Your email-address. I'll store it secret, trust me." %>
+      <%= f.text_field :email %>
+    </div>
+    <div class="ym-fbox-text">
+      <%= f.label :content, "Your comment" %>
+      <%= f.text_area :content %>
+    </div>
+    <div class="ym-fbox-text">
+      <%= f.label :antispam, "What's the name of the big, grey animal living in Africa? (Spam protection ;-))" %>
+      <%= f.text_field :antispam %>
+      <%= f.hidden_field :correct_antispam, :value => "Donkey" %>
+    </div>
+    <div class="ym-fbox-button">
+      <%= f.submit "Submit" %>
+    </div>
+  <% end %>
+</section>
