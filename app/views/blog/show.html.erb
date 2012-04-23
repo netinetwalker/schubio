@@ -48,10 +48,23 @@
   <% end %>
 </section>
 
-<section class="ym-gbox">
+<section>
   <h2>Add comment</h2>
 
   <%= form_for([@blogpost, @blogpost_comment], :html => {:class=>"ym-form linearize-form ym-full"}, :url => blogpost_blogpost_comments_path(@blogpost, @blogpost_comment, :anchor => "new_blogpost_comment")) do |f| %>
+    <%- if @blogpost_comment.errors.any? %>
+      <div class="box error">
+        <p>
+          Something went wrong:
+        </p>
+        <ul>
+          <%- @blogpost_comment.errors.each do |field, error| %>
+            <li><%= error %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
     <div class="ym-fbox-text">
       <%= f.label :author, "Your name" %>
       <%= f.text_field :author %>
