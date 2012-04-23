@@ -4,6 +4,15 @@
 
 <aside class="ym-g25 ym-gr">
   <div class="ym-gbox-right ym-clearfix">
+    <nav class="ym-vlist">
+      <h6 class="ym-vtitle">Projects</h6>
+      <ul>
+        <%- @projects.each do |project| %>
+          <li><%= link_to project.title, project %></li>
+        <% end %>
+      </ul>
+    </nav>
+
     <h3><%= @project.title %></h3>
     <p><%= @project.short_description %></p>
 
