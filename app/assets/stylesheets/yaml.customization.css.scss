@@ -124,6 +124,15 @@ nav#nav {
   }
 }
 
+nav.pagination {
+  background-color: transparent;
+  font-size: 1.4em;
+
+  span.current, span a {
+    padding: 0 5px;
+  }
+}
+
 footer {
   .cc_icons {
     text-align: right;

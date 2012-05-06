@@ -38,9 +38,6 @@
         </div>
       </article>
     <% end %>
+    <%= paginate @blogposts %>
   </div>
 </section>
-
-<%- content_for :page_pagination do %>
-  <%= paginate @blogposts %>
-<% end %>
