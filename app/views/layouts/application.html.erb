@@ -9,6 +9,8 @@
   <title><%= page_title yield(:page_title) %></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="alternate" type="application/atom+xml" title="Blog-feed (Atom)" href="<%= blog_feed_path(:format => :atom) %>">
 
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
