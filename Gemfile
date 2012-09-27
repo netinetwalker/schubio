@@ -4,7 +4,6 @@ gem "bundler", "~> 1.2.1"
 
 gem "rails", "3.2.8"
 gem "jquery-rails", "~> 2.1.3"
-gem "passenger", "~> 3.0.11"
 
 gem "mysql2", "~> 0.3.11"
 gem "devise", "~> 2.1.2"
