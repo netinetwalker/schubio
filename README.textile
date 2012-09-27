@@ -1,3 +1,0 @@
-h1. The SchubIO
-
-h2. Don't use that code yet - it's stupid.
