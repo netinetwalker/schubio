@@ -16,7 +16,7 @@ gem "uglifier", "~> 1.3.0"
 gem "RedCloth", "~> 4.2.9"
 gem "coderay", "~> 1.0.7"
 gem "kaminari", "~> 0.14.1"
-gem "turbolinks", "~> 0.1.5"
+gem "turbolinks", "~> 0.3.3"
 gem "formtastic", "~> 2.2.1"
 
 gem "activeadmin", "~> 0.5.0"
