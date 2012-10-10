@@ -9,5 +9,5 @@ class BlogpostComment < ActiveRecord::Base
   validates_presence_of :content, :message => "Wait. You wanna post a comment without a comment?"
 
   validates_format_of :email, :with  => Devise.email_regexp, :message => "Please provide a valid email-address."
-  validates_format_of :antispam, :with => /elephant/i, :message => "The antispam-answer was wrong. Shouldn't be that hard, the answer starts with Eleph..."
+  validates_format_of :antispam, :with => /ele(ph|f)ant/i, :message => "The antispam-answer was wrong. Shouldn't be that hard, the answer starts with Eleph..."
 end
