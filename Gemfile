@@ -18,8 +18,7 @@ gem "coderay", "~> 1.0.8"
 gem "kaminari", "~> 0.14.1"
 gem "turbolinks", "~> 0.6.1"
 gem "formtastic", "~> 2.2.1"
-
-gem "activeadmin", "~> 0.5.1"
+gem "rails_admin"
 gem "meta_search", "~> 1.1.3"
 
 gem "unicorn"
