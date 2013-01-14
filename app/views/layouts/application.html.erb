@@ -9,7 +9,7 @@
   <title><%= page_title yield(:page_title) %></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link rel="alternate" type="application/atom+xml" title="Blog-feed (Atom)" href="<%= blog_feed_path(:format => :atom) %>">
 
   <%= stylesheet_link_tag "application" %>
@@ -74,6 +74,10 @@
               <p>
                 <%= link_to "Home", root_path %> |
                 <%= link_to "Imprint", page_clean_path({:id => "imprint"}) %>
+
+                <% if user_signed_in? %>
+                  | <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+                <% end %>
               </p>
             </div>
           </section>
