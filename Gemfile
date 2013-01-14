@@ -2,21 +2,21 @@ source 'http://rubygems.org'
 
 gem "bundler", "~> 1.2.1"
 
-gem "rails", "3.2.10"
+gem "rails", "3.2.11"
 gem "jquery-rails", "~> 2.1.4"
 
 gem "mysql2", "~> 0.3.11"
-gem "devise", "~> 2.1.2"
+gem "devise", "~> 2.2.1"
 gem "settingslogic", "~> 2.0.9"
 gem "acts-as-taggable-on", "~> 2.3.3"
 
-gem "sass-rails", "~> 3.2.4"
+gem "sass-rails", "~> 3.2.6"
 gem "coffee-rails", "~> 3.2.2"
 gem "uglifier", "~> 1.3.0"
 gem "RedCloth", "~> 4.2.9"
 gem "coderay", "~> 1.0.8"
 gem "kaminari", "~> 0.14.1"
-gem "turbolinks", "~> 0.6.1"
+gem "turbolinks", "~> 1.0.0"
 gem "formtastic", "~> 2.2.1"
 gem "rails_admin"
 gem "meta_search", "~> 1.1.3"
