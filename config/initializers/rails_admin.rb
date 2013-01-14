@@ -117,6 +117,7 @@ RailsAdmin.config do |config|
       sort_by :title
 
       field :title
+      field :category
     end
 
     edit do
