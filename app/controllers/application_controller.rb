@@ -6,4 +6,8 @@ class ApplicationController < ActionController::Base
   def render_404
     render :template => "errors/404", :layout => 'application', :status => 404
   end
+
+  def render_401
+    render :template => "errors/401", :layout => 'application', :status => 401
+  end
 end

@@ -85,6 +85,9 @@ RailsAdmin.config do |config|
 
       field :url
       field :title
+      field :http_auth do
+        label 'Protected'
+      end
     end
 
     edit do
@@ -97,6 +100,18 @@ RailsAdmin.config do |config|
         field :url do
           length 255
           required true
+        end
+      end
+
+      group :access do
+        field :http_auth do
+          label 'HTTP auth enabled?'
+        end
+
+        field :http_auth_users do
+          label 'HTTP auth users'
+          help 'username:sha1(password)'
+          html_attributes cols: 100, rows: 5
         end
       end
 
