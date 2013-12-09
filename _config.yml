@@ -1,0 +1,19 @@
+name: Dennis Schubert
+markdown: redcarpet
+pygments: true
+permalink: /blog/:year/:month/:day/:title.html
+
+exclude:
+  - .*
+  - Gemfile
+  - Gemfile.lock
+
+redcarpet:
+  extensions:
+    - autolink
+    - fenced_code_blocks
+    - strikethrough
+
+sass:
+  style: nested
+  deploy_style: nested

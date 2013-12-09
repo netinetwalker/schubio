@@ -1,0 +1,41 @@
+    </section>
+    <footer>
+      <ul id="footer_navigation">
+        {% for link in site.data.navigation.footer %}
+          {% assign active = nil %}
+          {% if page.url == link.url or page.layout == link.layout %}
+            {% assign active = 'active' %}
+          {% endif %}
+          <li>
+            <a class="{{active}}" href="{{link.url}}">
+              {{link.title}}
+            </a>
+          </li>
+        {% endfor %}
+        <li class="ccicons">
+          <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de" target="_blank">
+            <i class="icon-cc-cc"></i>
+            <i class="icon-cc-by"></i>
+            <i class="icon-cc-sa"></i>
+            <span class="iconlabel">Contents: CC-BY-SA</span>
+          </a>
+        </li>
+        <li class="sociallinks">
+          <a href="https://pod.geraspora.de/u/denschub" target="_blank">
+            My Diaspora* profile
+          </a>
+        </li>
+        <li class="sociallinks">
+          <a href="https://twitter.com/denschub" target="_blank">
+            Follow me on Twitter
+          </a>
+        </li>
+        <li class="sociallinks">
+          <a href="https://github.com/denschub" target="_blank">
+            Open Source projects on github
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

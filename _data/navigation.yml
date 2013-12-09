@@ -1,0 +1,11 @@
+main:
+  - title: "Blog"
+    url: "/index.html"
+    layout: post
+  - title: "Profile"
+    url: "/profile.html"
+  - title: "Contact"
+    url: "/contact.html"
+footer:
+  - title: "Imprint and Credits"
+    url: "/imprint.html"

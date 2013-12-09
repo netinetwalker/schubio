@@ -1,0 +1,20 @@
+- title: "Bitwei.se"
+  description: An educational website I made to teach the beauty of binary operations.
+  url: http://bitwei.se
+  tags:
+    - Educational
+- title: "Bottle-Linkshorter"
+  description: A very lightweight link shortening service I am using
+  url: https://github.com/denschub/bottle-linkshorter
+  tags:
+    - Python
+- title: "BrowserID for Devise"
+  description: A gem allowing BrowserID login in applications using Devise.
+  url: /blog/2012/08/19/browserid-on-rails.html
+  tags:
+    - Ruby
+- title: "Diaspora*"
+  description: A dezentralized social networking plattform.
+  url: https://diasporafoundation.org/
+  tags:
+    - Ruby on Rails

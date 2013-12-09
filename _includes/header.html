@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dennis Schuberts personal website with a blog, projects and some other stuff">
+    <meta name="author" content="Dennis Schubert">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="alternate" type="application/atom+xml" title="Blog feed (Atom)" href="/blog/atom.xml">
+    <title>
+      {% if page.title %}
+        {{ page.title }} - Dennis Schubert
+      {% else %}
+        Dennis Schubert
+      {% endif %}
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+        <a href="/">{{site.name}}</a>
+      </h1>
+    </header>
+    <nav>
+      <ul>
+        {% for link in site.data.navigation.main %}
+          {% assign active = nil %}
+          {% if page.url == link.url or page.layout == link.layout %}
+            {% assign active = 'active' %}
+          {% endif %}
+          <li>
+            <a class="{{active}}" href="{{link.url}}">
+              {{link.title}}
+            </a>
+          </li>
+        {% endfor %}
+        <li>
+          <a href="https://pod.geraspora.de/u/denschub" target="_blank">
+            <i class="icon-diaspora"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/denschub" target="_blank">
+            <i class="icon-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/denschub" target="_blank">
+            <i class="icon-github"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section id="content">
