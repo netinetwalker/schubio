@@ -11,7 +11,8 @@ layout: default
 </p>
 
 <section id="blogposts">
-{% for post in site.posts %}
+{% assign_posts %}
+{% for post in posts %}
   <article>
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     <p class="metaline">
