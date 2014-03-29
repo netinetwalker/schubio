@@ -1,0 +1,23 @@
+---
+layout: default
+title: Shy blog posts
+---
+
+<p>
+  These blog posts are old. Very old. I found them in backups of my older website
+  versions. Since I blogged German stuff back then, the posts are written in
+  German. Maybe I'll translate them some day...
+</p>
+
+<section id="blogposts">
+{% assign_posts shy: true, normal: false %}
+{% for post in posts %}
+  <article>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p class="metaline">
+      <span class="dateline"><i class="icon-date"></i> {{ post.date | date: "%Y-%m-%d" }}</span>
+      <span class="tagline"><i class="icon-tag"></i> {{ post.tags | join: ", " }}</span>
+    </p>
+  </article>
+{% endfor %}
+</section>
