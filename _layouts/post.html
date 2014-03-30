@@ -1,13 +1,23 @@
 {% include header.html %}
 
 <article>
-  <h1>{{ page.title }}</h1>
+  <h1 class="title">{{ page.title }}</h1>
   <p class="metaline">
-    <span class="dateline"><i class="icon-date"></i> {{ page.date | date: "%Y-%m-%d" }}</span>
-    <span class="tagline"><i class="icon-tag"></i> {{ page.tags | join: ", " }}</span>
+    {% if page.shy %}<span><i class="icon-invisible"></i> unlisted</span>{% endif %}
+    {% if page.draft %}<span><i class="icon-draft"></i> draft</span>{% endif %}
+    <span><i class="icon-date"></i> {{ page.date | date: "%Y-%m-%d" }}</span>
+    <span><i class="icon-tag"></i> {{ page.tags | join: ", " }}</span>
   </p>
-  
+
   {{ content }}
+
+  <p class="back-arrow">
+    {% if page.shy %}
+      <a href="/blog/shy.html"><i class="icon-back-arrow"></i> Show all unlisted posts (do the impossible!)</a>
+    {% else %}
+      <a href="/"><i class="icon-back-arrow"></i> Show all posts</a>
+    {% endif %}
+  </p>
 </article>
 
 {% include footer.html %}

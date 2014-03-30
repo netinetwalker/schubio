@@ -6,11 +6,11 @@ title: Shy blog posts
 <p>
   These blog posts are old. Very old. I found them in backups of my older website
   versions. Since I blogged German stuff back then, the posts are written in
-  German. Maybe I'll translate them some day...
+  (bad) German. Maybe I'll translate them some day...
 </p>
 
 <section id="blogposts">
-{% assign_posts shy: true, normal: false %}
+{% assign_posts show: shy %}
 {% for post in posts %}
   <article>
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>

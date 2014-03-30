@@ -106,6 +106,12 @@ p, ul, ol {
     font-size: 1em;
     line-height: 1.5em;
   }
+
+  a i {
+    position: relative;
+    top: 1px;
+    padding-right: 3px;
+  }
 }
 
 a {
@@ -163,8 +169,12 @@ img {
 }
 
 article {
+  h1.title {
+    margin-bottom: 0.3em;
+  }
   p.metaline {
     margin-left: $page-padding/3;
+    margin-top: 0;
 
     i {
       color: $highlight-color;

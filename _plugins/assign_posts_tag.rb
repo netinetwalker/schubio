@@ -12,25 +12,25 @@ module Jekyll
     def initialize(tag_name, markup, options)
       super
       @settings = {
-        :normal => true,
-        :shy => false
+        :show => 'normal'
       }
       markup.scan SETTINGS_REGEX do |key, value|
-        if ['true', 'false'].include? value
-          @settings[key.to_sym] = value == 'true'
-        else
-          @settings[key.to_sym] = value
-        end
+        @settings[key.to_sym] = value
       end
     end
 
     def render(context)
       all = context.registers[:site].posts
-      if @settings[:normal] && @settings[:shy]
+      if @settings[:show]['all']
         posts = all
       else
-        posts = all.select {|p| !p.data['shy']} if @settings[:normal]
-        posts = all.select {|p| p.data['shy']} if @settings[:shy]
+        posts = all.select do |post|
+          case @settings[:show]
+            when 'shy' then (post.data['shy'] && !post.data['draft'])
+            when 'draft' then (post.data['draft'])
+            else (!post.data['shy'] && !post.data['draft'])
+          end
+        end
       end
       context.scopes.last['posts'] = posts.reverse
       ''
