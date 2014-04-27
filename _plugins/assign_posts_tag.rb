@@ -3,7 +3,12 @@
 #
 # Description: A simple tag to assign the posts variable with some filters
 #
-# Syntax: {% assign_posts normal: true, shy: false %}
+# Syntax: {% assign_posts show: *mode* %}
+#   Mode can be one of:
+#     - `normal`: shows only published, non-shy posts
+#     - `all`: shows all posts, even drafts and shy ones
+#     - `shy`: shows only posts with `shy: true`
+#     - `draft`: shows only drafts (`draft: true`)
 
 module Jekyll
   class AssignPostsTag < Liquid::Tag
