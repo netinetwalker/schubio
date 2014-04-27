@@ -17,6 +17,11 @@ body, h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+header, nav ul, #content, footer ul {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header, #content {
   padding: 0 $page-padding;
 }
@@ -31,7 +36,6 @@ nav, footer {
   ul {
     list-style-type: none;
     padding: 0 $page-padding;
-    margin: 0;
     text-align: right;
   }
 
