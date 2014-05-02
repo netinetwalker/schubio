@@ -52,13 +52,21 @@ nav, footer {
       }
 
       .iconlabel {
-        display: none;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
       }
 
       i {
         font-size: 1em;
         position: relative;
         top: 4px;
+      }
+
+      span {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
       }
     }
   }
@@ -237,6 +245,7 @@ article {
 
         .iconlabel, &.sociallinks {
           display: block;
+          position: static;
         }
       }
     }
