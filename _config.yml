@@ -15,5 +15,6 @@ redcarpet:
     - strikethrough
 
 sass:
+  sass_dir: css
   style: nested
   deploy_style: nested
