@@ -10,7 +10,7 @@ title: Shy blog posts
 </p>
 
 <section id="blogposts">
-{% assign_posts show: shy %}
+{% assign posts = site.posts | where_not: "draft": true | where: "shy": true %}
 {% for post in posts %}
   <article>
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>

@@ -11,7 +11,7 @@ layout: default
 </p>
 
 <section id="blogposts">
-{% assign_posts %}
+{% assign posts = site.posts | where_not: "draft": true | where_not: "shy": true %}
 {% for post in posts %}
   <article>
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
