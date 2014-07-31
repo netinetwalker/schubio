@@ -13,6 +13,7 @@ redcarpet:
     - autolink
     - fenced_code_blocks
     - strikethrough
+    - superscript
 
 sass:
   sass_dir: css
