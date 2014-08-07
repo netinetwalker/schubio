@@ -17,42 +17,44 @@
     </title>
   </head>
   <body>
-    <header>
+    <header {% if omitnav %}class="nonav"{% endif %}>
       <h1 id="title">
         <a href="/">{{site.name}}</a>
       </h1>
     </header>
-    <nav>
-      <ul>
-        {% for link in site.data.navigation.main %}
-          {% assign active = nil %}
-          {% if page.url == link.url or page.layout == link.layout %}
-            {% assign active = 'active' %}
-          {% endif %}
+    {% unless omitnav %}
+      <nav>
+        <ul>
+          {% for link in site.data.navigation.main %}
+            {% assign active = nil %}
+            {% if page.url == link.url or page.layout == link.layout %}
+              {% assign active = 'active' %}
+            {% endif %}
+            <li>
+              <a class="{{active}}" href="{{link.url}}">
+                {{link.title}}
+              </a>
+            </li>
+          {% endfor %}
           <li>
-            <a class="{{active}}" href="{{link.url}}">
-              {{link.title}}
+            <a href="https://pod.geraspora.de/u/denschub" target="_blank">
+              <i class="icon-diaspora"></i>
+              <span>My Diaspora* profile</span>
             </a>
           </li>
-        {% endfor %}
-        <li>
-          <a href="https://pod.geraspora.de/u/denschub" target="_blank">
-            <i class="icon-diaspora"></i>
-            <span>My Diaspora* profile</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/denschub" target="_blank">
-            <i class="icon-twitter"></i>
-            <span>Follow me on Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/denschub" target="_blank">
-            <i class="icon-github"></i>
-            <span>Open Source projects on GitHub</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+          <li>
+            <a href="https://twitter.com/denschub" target="_blank">
+              <i class="icon-twitter"></i>
+              <span>Follow me on Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/denschub" target="_blank">
+              <i class="icon-github"></i>
+              <span>Open Source projects on GitHub</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    {% endunless %}
     <section id="content">
