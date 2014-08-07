@@ -1,7 +1,7 @@
     </section>
     <footer>
       <ul id="footer_navigation">
-        {% unless omitnav %}
+        {% unless include.omitnav %}
           {% for link in site.data.navigation.footer %}
             {% assign active = nil %}
             {% if page.url == link.url or page.layout == link.layout %}

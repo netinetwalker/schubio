@@ -17,12 +17,12 @@
     </title>
   </head>
   <body>
-    <header {% if omitnav %}class="nonav"{% endif %}>
+    <header {% if include.omitnav %}class="nonav"{% endif %}>
       <h1 id="title">
         <a href="/">{{site.name}}</a>
       </h1>
     </header>
-    {% unless omitnav %}
+    {% unless include.omitnav %}
       <nav>
         <ul>
           {% for link in site.data.navigation.main %}
