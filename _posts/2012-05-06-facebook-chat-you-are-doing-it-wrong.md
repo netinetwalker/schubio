@@ -130,4 +130,4 @@ It's funny. Google offers XMPP, too, it's called Google Talk and is well integra
 You can authenticate with your Google Mail address and your Google password, you can manage the Roster (XMPPs contact list) using the usual `<iq/>`-stanzas, talk to people on other servers and send custom data. Yay. So our "game" will have Google Talk support. :-)
 
 [fb-chat-doc]: http://developers.facebook.com/docs/chat/
-[xmpp-introduction-blog]: /2011/09/24/xmpp-a-little-introduction.html
+[xmpp-introduction-blog]: /blog/2011/09/24/xmpp-a-little-introduction.html
