@@ -17,7 +17,7 @@
     </title>
   </head>
   <body>
-    <header {% if include.omitnav %}class="nonav"{% endif %}>
+    <header>
       <h1 id="title">
         <a href="/">{{site.name}}</a>
       </h1>
@@ -57,4 +57,7 @@
         </ul>
       </nav>
     {% endunless %}
+    {% if include.omitnav %}
+      <hr class="nonav_divider" />
+    {% endif %}
     <section id="content">

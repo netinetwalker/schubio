@@ -29,9 +29,11 @@ header, #content {
   padding: 0 $page-padding;
 }
 
-header.nonav {
+hr.nonav_divider {
+  border: none;
   border-bottom: 5px solid $highlight-color;
-  padding-bottom: 31px;
+  margin: 0;
+  padding: 0 0 31px 0;
 }
 
 header h1 {
