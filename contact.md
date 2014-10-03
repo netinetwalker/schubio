@@ -10,11 +10,15 @@ Awesome, do it! You can...
 * send an email to [hello@dennis-schubert.de][email] ([PGP][email-pgp])
 * try contacting me via XMPP: [denschub@dsx.cc][xmpp-id]
 
-I am busy most of the time, so please bear with me if I'm not responding to your messages within two hours. If your message is not useless or spam, you will get an answer, trust me. :)
+I am busy most of the time, so please bear with me if I'm not responding to
+your messages within two hours. If your message is not useless or spam, you
+will get an answer, trust me. :)
 
 ## Social profiles
 
-It is often easier to share small amount of information via social networking plattforms, so you might want to check out my profiles if you are curious. You can...
+It is often easier to share small amount of information via social networking
+plattforms, so you might want to check out my profiles if you are curious. You
+can...
 
 * add me to your contacts on [Diaspora\*][diaspora-profile]
 * follow me on [Twitter][twitter]
