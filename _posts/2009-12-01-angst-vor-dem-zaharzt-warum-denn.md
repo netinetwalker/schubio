@@ -9,7 +9,9 @@ tags:
 
 Für alle die Angst vor dem Zahnarzt haben: Keine Panik!
 
-Ich habe grad mit einem *guten Bekannten* gechattet, der gerade vom Zahnarzt kam. Dieser kam sehr schnell wieder und schrieb mich auch gleich an. Dann erzählte er mir etwas ... ähm ... *lustiges* :xmas_wink:
+Ich habe grad mit einem *guten Bekannten* gechattet, der gerade vom Zahnarzt
+kam. Dieser kam sehr schnell wieder und schrieb mich auch gleich an. Dann
+erzählte er mir etwas ... ähm ... *lustiges* :xmas_wink:
 
 Hier mal das was er mir geschrieben hat:
 

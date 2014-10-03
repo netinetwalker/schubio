@@ -6,15 +6,20 @@ tags:
   - technologies
 ---
 
-We are living in a world changing very fast. New technologies are popping up and old technologies are disappering on a day-to-day basis and we are not really thinking about what is going on. Big things are going on right now: HTML5, CSS3, IPv6, ...
+We are living in a world changing very fast. New technologies are popping up
+and old technologies are disappering on a day-to-day basis and we are not
+really thinking about what is going on. Big things are going on right now:
+HTML5, CSS3, IPv6, ...
 
-I just had the idea to write down the technolgies I am using right now, write another article in some years and compare them both. So, let's start!
+I just had the idea to write down the technolgies I am using right now, write
+another article in some years and compare them both. So, let's start!
 
 ## Computers
 
 This blog article was written on an Apple MacBook Pro with
 
-* an Intel Core i7 (I7-2675QM) with four hyperthreaded cores with 2,2 GHz and 6 MB L3-Cache
+* an Intel Core i7 (I7-2675QM) with four hyperthreaded cores with 2,2 GHz and 6
+  MB L3-Cache
 * 8 gigabytes of DDR3-10600 RAM
 * A 750 gigabytes HDD connected via SATA
 * A AMD Radeon HD 6750M with 512 megabytes GDDR5
@@ -33,13 +38,15 @@ I am using a
 * NFC, Bluetooth 2 and GPS
 * A 4.65 inces AMOLED display with 1280x720
 * A 1750 mAh battery
-* Connected to the internet via HSDP and LTE with something between 7 and 50 Mbit/s
+* Connected to the internet via HSDP and LTE with something between 7 and 50
+  Mbit/s
 
 ## Servers
 
 This blog runs inside of a virtual machine on a host with
 
-* an Intel Xeon E3-1245 with four hyperthreaded cores with 3,3 GHz and 8 MB L3-Cache
+* an Intel Xeon E3-1245 with four hyperthreaded cores with 3,3 GHz and 8 MB
+  L3-Cache
 * 32 gigabytes of DDR3-RAM with ECC
 * Two 3 TB HDDs connected via SATA in a RAID 1
 * A ethernet module supporting 10/100/1000Base-T

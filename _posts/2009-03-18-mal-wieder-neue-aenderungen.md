@@ -9,8 +9,12 @@ tags:
 
 Ich habe hier mal wieder etwas verändert.
 
-Viele meinten ja, das dieser grune Balken, den ich fruher drin hatte, etwas kaputt aussah. Da musste ich nur zustimmen.
+Viele meinten ja, das dieser grune Balken, den ich fruher drin hatte, etwas
+kaputt aussah. Da musste ich nur zustimmen.
 
-Also habe ich diesen Balken kurzerhand entfernt. Anstelle dieses Balkens ist jetzt (nur im Blog) ein kleines Maskottchen von mir, sodass es nicht so leer aussieht.
+Also habe ich diesen Balken kurzerhand entfernt. Anstelle dieses Balkens ist
+jetzt (nur im Blog) ein kleines Maskottchen von mir, sodass es nicht so leer
+aussieht.
 
-Auch intern habe ich einiges geändert, falls es Probleme geben sollte, sagt einfach Bescheid  :-)
+Auch intern habe ich einiges geändert, falls es Probleme geben sollte, sagt
+einfach Bescheid  :-)
