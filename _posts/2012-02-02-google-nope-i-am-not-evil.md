@@ -1,7 +1,11 @@
---- layout: post title: "Google: Nope, I am not evil!" date: 2012-02-02
-00:00:00 tags:
+---
+layout: post
+title: "Google: Nope, I am not evil!"
+date: 2012-02-02 00:00:00
+tags:
   - google
-  - security ---
+  - security
+---
 
 I just got an interesting mail for 3 of my domains:
 
