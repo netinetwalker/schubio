@@ -7,7 +7,7 @@ title: Contact
 
 Awesome, do it! You can...
 
-* send an email to [hello@dennis-schubert.de][email] ([PGP][email-pgp])
+* send an email to [mail@dennis-schubert.de][email] ([PGP][email-pgp])
 * try contacting me via XMPP: [denschub@dsx.cc][xmpp-id]
 
 I am busy most of the time, so please bear with me if I'm not responding to
@@ -30,7 +30,7 @@ can...
 [diaspora-profile]: http://pod.geraspora.de/u/denschub
 [flickr]: https://secure.flickr.com/photos/denschub/sets
 [email-pgp]: /public-key.html
-[email]: mailto:hello@dennis-schubert.de
+[email]: mailto:mail@dennis-schubert.de
 [github]: https://github.com/denschub
 [twitter]: https://twitter.com/denschub
 [xmpp-id]: xmpp:denschub@dsx.cc
