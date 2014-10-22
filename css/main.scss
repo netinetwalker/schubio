@@ -217,9 +217,18 @@ article {
 }
 
 .highlight, blockquote {
-  margin-left: 1px;
+  margin: 1.5em 0 0 1px;
   padding-left: 20px;
   border-left: 1px solid $highlight-color;
+}
+
+.highlight {
+  overflow-x: auto;
+
+  pre {
+    white-space: pre;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 760px) {
