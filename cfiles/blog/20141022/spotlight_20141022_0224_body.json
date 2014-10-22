@@ -1,0 +1,149 @@
+[
+  {
+    "delta": 0,
+    "input": "foo",
+    "latency": 249,
+    "timestamp": 1174,
+    "ttfb": 0,
+    "type": "search_local"
+  },
+  {
+    "delta": 0,
+    "input": "nuclear",
+    "latency": 223,
+    "timestamp": 10324,
+    "ttfb": 0,
+    "type": "search_local"
+  },
+  {
+    "delta": 0,
+    "input": "dasdasdas",
+    "latency": 151,
+    "timestamp": 15203,
+    "ttfb": 0,
+    "type": "search_local"
+  },
+  {
+    "delta": 0,
+    "input": "foo",
+    "latency": 243,
+    "timestamp": 1153,
+    "ttfb": 0,
+    "type": "search_local"
+  },
+  {
+    "delta": 455,
+    "delta_ref": "spotlight_local_search",
+    "headers": {
+      "Accept-Charset": "utf-8",
+      "Accept-Encoding": "gzip, deflate",
+      "User-Agent": "(OS X 14A389) Spotlight/916",
+      "X-Apple-CachedQueries": "[]",
+      "X-Apple-CachedResults": "[]"
+    },
+    "input": " ",
+    "latency": 1608,
+    "timestamp": 1608,
+    "ttfb": 1608,
+    "type": "search_remote",
+    "url": "https://api.smoot.apple.com/search?q=+&locale=en-US&time_zone=Europe/Berlin&calendar=gregorian&key=andromeda"
+  },
+  {
+    "delta": 794,
+    "delta_ref": "spotlight_local_search",
+    "headers": {
+      "Accept-Charset": "utf-8",
+      "Accept-Encoding": "gzip, deflate",
+      "User-Agent": "(OS X 14A389) Spotlight/916",
+      "X-Apple-CachedQueries": "[]",
+      "X-Apple-CachedResults": "[]",
+      "X-Apple-UI-Scale": "1.000000"
+    },
+    "input": "n",
+    "latency": 202,
+    "timestamp": 1947,
+    "ttfb": 202,
+    "type": "search_remote",
+    "url": "https://api.smoot.apple.com/search?q=n&locale=en-US&time_zone=Europe/Berlin&calendar=gregorian&key=andromeda"
+  },
+  {
+    "delta": 0,
+    "input": "nuclear",
+    "latency": 208,
+    "timestamp": 2673,
+    "ttfb": 0,
+    "type": "search_local"
+  },
+  {
+    "input": "nuclear",
+    "results": [
+      "images",
+      "dictionary",
+      "documents",
+      "pdfs",
+      "images",
+      "other",
+      "developer"
+    ],
+    "timestamp": 2713,
+    "trigger_timestamp": 2464,
+    "type": "render"
+  },
+  {
+    "delta": 0,
+    "input": "nuclear bomb",
+    "latency": 212,
+    "timestamp": 3165,
+    "ttfb": 0,
+    "type": "search_local"
+  },
+  {
+    "input": "nuclear bomb",
+    "results": [
+      "developer",
+      "documents",
+      "other",
+      "developer"
+    ],
+    "timestamp": 3203,
+    "trigger_timestamp": 2951,
+    "type": "render"
+  },
+  {
+    "delta": 223,
+    "delta_ref": "spotlight_local_search",
+    "headers": {
+      "Accept-Charset": "utf-8",
+      "Accept-Encoding": "gzip, deflate",
+      "User-Agent": "(OS X 14A389) Spotlight/916",
+      "X-Apple-CachedQueries": "[]",
+      "X-Apple-CachedResults": "[]",
+      "X-Apple-UI-Scale": "1.000000"
+    },
+    "input": "nuclear bomb",
+    "latency": 438,
+    "timestamp": 3388,
+    "ttfb": 438,
+    "type": "search_remote",
+    "url": "https://api.smoot.apple.com/search?q=nuclear+bomb&locale=en-US&time_zone=Europe/Berlin&calendar=gregorian&key=andromeda"
+  },
+  {
+    "fbq": "eyJ1IjoiIiwicCI6Im51Y2xlYXIgYm9tYiIsInEiOiJudWNsZWFyIGJvbWIiLCJ0cyI6MTQxMzkzNzQ2NywiZyI6ImRlL2JhZGVud3VydHRlbWJlcmcva2FybHNydWhlIiwiYSI6InNwb3RsaWdodCIsImQiOiJtYWMiLCJsIjoiZW5fVVMiLCJpIjoiMTQzNDQxLTEsMjEiLCJjIjoiNDguNzUsOC4yNSIsImVjdiI6MCwiY2N2IjowfQ==",
+    "input": "nuclear bomb",
+    "results": [
+      "server:eyJkIjoid2lraSIsInIiOiJ3Ok51Y2xlYXIrd2VhcG9uIn0=",
+      "documents",
+      "other",
+      "developer"
+    ],
+    "timestamp": 3482,
+    "trigger_timestamp": 2951,
+    "type": "render"
+  },
+  {
+    "input": "nuclear bomb",
+    "method": "clear",
+    "timestamp": 5995,
+    "type": "abandonment"
+  }
+]
