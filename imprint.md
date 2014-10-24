@@ -24,11 +24,11 @@ I'm not using any kind of CSS framework here, but I included Nicolas Gallaghers
 license and the font files can be found at [fontsquirrel.com][font].
 
 Last but not least: some ideas of my "design" are inspired by some drafts
-[Marius Şucan][robo] did for me. He did the design three years ago and it still
-looks charming. So I guess he is good at what he is doing. :)
+[Marius Şucan][marius] did for me. He did the design three years ago and it
+still looks charming. So I guess he is good at what he is doing. :)
 
 [email]: mailto:hello@dennis-schubert.de
 [font]: http://www.fontsquirrel.com/fonts/gandhi-sans
 [jekyll]: http://jekyllrb.com/
 [normalize]: http://necolas.github.io/normalize.css/
-[robo]: http://www.robodesign.ro/
+[marius]: http://marius.sucan.ro/
