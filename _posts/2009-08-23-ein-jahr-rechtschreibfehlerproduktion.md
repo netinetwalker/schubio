@@ -101,5 +101,7 @@ gefällt, aber ein bisschen mehr könnten es doch sein :lol:
 
 {% img bordered center /cfiles/blog/20090823/stats_23.08.2009.jpg %}
 
-[cssneustart]: http://cssneustart.de [matze]: http://www.matthias-hielscher.de
-[s9y]: http://www.s9y.org [wordpress]: http://wordpress-deutschland.org
+[cssneustart]: http://cssneustart.de
+[matze]: http://www.matthias-hielscher.de
+[s9y]: http://www.s9y.org
+[wordpress]: http://wordpress-deutschland.org
