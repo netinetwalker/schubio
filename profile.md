@@ -24,9 +24,9 @@ I cannot decide between one of them, so I work with [Ruby on Rails][rails] and
 my privacy. That's why I really like the [Diaspora\* project][diaspora] and so
 I am also working there a bit.
 
-Somehow I am in love with [XMPP][xmpp], so my server monitoring, my contact
-form and my room heating's control are talking XMPP with me. Yes, my heating's
-control talks XMPP.
+Somehow I am in love with [XMPP][xmpp] (and IRC), so my server monitoring, my
+contact form and my room heating's control are talking XMPP with me. Yes, my
+heating's control talks XMPP.
 
 ## Projects
 
