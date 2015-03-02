@@ -3,30 +3,40 @@ layout: default
 title: Profile
 ---
 
-# Personal
+# About myself
 
 {% img bordered float-right /cfiles/profile_picture.jpg %}
 
-My name is Dennis Schubert and I was born on September 17th, 1993. At the
-moment I am living somewhere between Stuttgart and Balingen, both cities in
-southern Germany. When I am not coding (or sleeping), I sometimes enjoy getting
-some fresh air outside and I usually have my digital camera with me. All my
-photos are on [flickr][flickr], most of them are licensed under some Creative
-Commons license. :)
+My name is Dennis Schubert and I am a software developer born on September
+17th, 1993. At the moment I am living somewhere between Stuttgart and Balingen,
+both cities in southern Germany.
 
-# Work
+When I am not coding (or sleeping), I sometimes enjoy getting some fresh air
+outside and I usually have my digital camera with me. All my photos are on
+[flickr][flickr], most of them are licensed under some Creative Commons
+license.
 
-Most of the time I am developing web applications. Thus I am able to create
-software using Ruby, Python, JavaScript and even a bit of C. ;)
+Somehow I fell in love with technology which is why I spend my days (and most of
+my nights, too) with developing software and improving things. Some people may
+call me a hacker, which may be the result of me being interested in software
+security or the fact that I am obsessed with XMPP (and IRC), and my server
+monitoring and my room heater's control speak XMPP with me. Yes, my heater's
+control talks XMPP.
+
+# Software development
+
+Most of the time I develop web applications. Thus I am able to create software
+using JavaScript, Ruby, Python, C and even a bit of Rust.
 
 I cannot decide between one of them, so I work with [Ruby on Rails][rails] and
 [Django][django] - depends on the project. I know rails and I'm concerned about
 my privacy. That's why I really like the [Diaspora\* project][diaspora] and so
-I am also working there a bit.
+I am also work there a bit.
 
-Somehow I am in love with [XMPP][xmpp] (and IRC), so my server monitoring, my
-contact form and my room heating's control are talking XMPP with me. Yes, my
-heating's control talks XMPP.
+There is a [dedicated page about my projects][projects] and I suggest that you
+check it out if you want to learn more about who I am and what I work on. Do not
+hesitate to [contact me][contact] if you have any questions or if you want to
+get in touch with me.
 
 # Curriculum vitae
 
@@ -49,4 +59,3 @@ Incomplete. Inaccurate. [Ask me][contact] if you want to know more.
 [projects]: /projects.html
 [rails]: http://rubyonrails.org/
 [wes]: https://www.weber-ebusiness.de/
-[xmpp]: http://xmpp.org/

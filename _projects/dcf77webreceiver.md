@@ -5,7 +5,7 @@ infolink: https://github.com/denschub/dcf77webreceiver/blob/master/README.md
 sourcelink: https://github.com/denschub/dcf77webreceiver
 ---
 
-The dcf77webreceiver is a  web application to receive and decode [DCF77](dcf77)
+The dcf77webreceiver is a  web application to receive and decode [DCF77][dcf77]
 time information from inside the browser via an antenna connected to a
 Raspberry Pi.  It all started as a very small proof-of-concept but it turned
 out people actually like it, so I improved the web interface and made the
