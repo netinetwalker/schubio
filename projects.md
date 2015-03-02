@@ -5,16 +5,17 @@ title: Projects
 
 # Projects
 
-Currently I get paid for working on closed source software, so I cannot list
-all the stuff I am working on. But still, here is a small amount of projects I
-am contributing to. For a full list of my open source projects, you should
-check out my [github account][github]. If you are interested in what I am
-doing, [contact][contact] me and I will tell you a bit more about what I am
-working on.
+Currently I get paid to work on closed source software, so I cannot list all
+the things I am working on. But still, here is a small amount of projects I am
+contributing to. For a full list of my open source projects, you should check
+out my [github account][github]. If you are interested in what I am doing,
+[contact][contact] me and I will tell you a bit more about what I am working
+on.
 
 ## Notable projects
 
-Some of the projects you might already heard of or somewhat interesting stuff.
+Some of the projects you might already have heard of or somewhat interesting
+things.
 
 {% assign projects = site.projects | where: 'notable': true | sort: 'position', 'last' %}
 {% for project in projects %}
