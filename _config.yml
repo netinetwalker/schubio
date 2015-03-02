@@ -3,6 +3,9 @@ markdown: redcarpet
 highlighter: pygments
 permalink: /blog/:year/:month/:day/:title.html
 
+collections:
+  - projects
+
 exclude:
   - .*
   - Gemfile

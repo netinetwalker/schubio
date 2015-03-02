@@ -28,25 +28,6 @@ Somehow I am in love with [XMPP][xmpp] (and IRC), so my server monitoring, my
 contact form and my room heating's control are talking XMPP with me. Yes, my
 heating's control talks XMPP.
 
-## Projects
-
-Currently I get paid for developing closed source software, so I cannot list
-all the stuff I am working on. But still, here is a small amount of projects I
-am contributing to. For a full list of my open source projects, you should
-check out my [github account][github]. If you are interested in what I am
-doing, [contact][contact] me and I will tell you a bit more about what I am
-working on.
-
-<ul>
-{% assign projects = site.data.projects | sort: 'title' %}
-{% for project in projects %}
-  <li>
-    <a href="{{ project.url }}"><strong>{{ project.title }}</strong></a> ({{ project.tags | join: ", " }}): <br>
-    {{ project.description }}
-  </li>
-{% endfor %}
-</ul>
-
 # Curriculum vitae
 
 Incomplete. Inaccurate. [Ask me][contact] if you want to know more.
@@ -65,7 +46,7 @@ Incomplete. Inaccurate. [Ask me][contact] if you want to know more.
 [django]: https://www.djangoproject.com/
 [flickr]: http://www.flickr.com/photos/denschub/sets/
 [github]: https://github.com/denschub
-[projects]: /projects/
+[projects]: /projects.html
 [rails]: http://rubyonrails.org/
 [wes]: https://www.weber-ebusiness.de/
 [xmpp]: http://xmpp.org/
