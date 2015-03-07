@@ -18,7 +18,7 @@ software developer working at Mozilla for the Developer Tools team. Mihai has
 inherited tissue disease and basically makes your skin really fragile. I will
 not go into detail here; you can do that on your own if you are interested.
 [Mihai did a great job on raising awareness to EB][mihai-touched], and there is
-no need of duplicating contents; just go ahead and read his article. You should
+no need to duplicate contents; just go ahead and read his article. You should
 read [Joe Walker's post about Mihai and his work][console-mihai], too, but I
 want to highlight a very touching paragraph:
 
@@ -51,7 +51,7 @@ special needs, but we all do have special needs to a certain degree. People with
 physical or mental problems are not stupid, and you should not treat them as if
 they are. Because that really hurts.
 
-If you meet a personified edge cases, treat them like every other person. If you
+If you meet personified edge cases, treat them like every other person. If you
 are unsure about certain things, just ask. Nobody will hurt you if you ask
 questions, but people will feel hurt if you act weird. You do not have to speak
 loud and slow to people with paraplegia, and you do not have to complete
