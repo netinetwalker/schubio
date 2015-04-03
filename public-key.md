@@ -1,6 +1,7 @@
 ---
 layout: default
 title: PGP public key
+in_sitemap: true
 ---
 
 # PGP public key

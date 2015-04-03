@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Projects
+in_sitemap: true
 ---
 
 # Projects

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Imprint
+in_sitemap: true
 ---
 
 # Legal information

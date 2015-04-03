@@ -2,6 +2,7 @@ name: Dennis Schubert
 markdown: redcarpet
 highlighter: pygments
 permalink: /blog/:year/:month/:day/:title.html
+main_base_url: http://schub.io
 
 collections:
   - projects

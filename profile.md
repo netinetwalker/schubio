@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Profile
+in_sitemap: true
 ---
 
 # About myself

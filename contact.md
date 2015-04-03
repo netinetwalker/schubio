@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contact
+in_sitemap: true
 ---
 
 # Want to talk to me?

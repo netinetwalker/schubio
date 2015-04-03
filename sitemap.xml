@@ -1,0 +1,29 @@
+---
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  {% assign posts = site.posts | where_not: "draft": true | where_not: "shy": true %}
+  {% for post in posts %}
+    <url>
+      <loc>{{ post.url | prepend: site.main_base_url }}</loc>
+      {% if post.last_modified_at %}
+        <lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% endif %}
+    </url>
+  {% endfor %}
+
+  {% for page in site.pages %}{% if page.in_sitemap %}
+  <url>
+    <loc>{{ page.url | replace:'/index.html','/' | prepend: site.main_base_url }}</loc>
+    {% if page.last_modified_at %}
+      <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
+    {% endif %}
+  </url>
+  {% endif %}{% endfor %}
+</urlset>
