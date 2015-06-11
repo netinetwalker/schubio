@@ -26,9 +26,9 @@ things.
 {{ project.content }}
 
 {% if project.infolink %}
-Get [more information]({{ project.infolink }}) or [grab the source code]({{ project.sourcelink }}).
+Get [more information]({{ project.infolink }}) or [have a look at the source code]({{ project.sourcelink }}).
 {% else %}
-[Grab the source code]({{ project.sourcelink }}).
+[Have a look at the source code]({{ project.sourcelink }}).
 {% endif %}
 
 {% endfor %}
