@@ -26,13 +26,15 @@ control talks XMPP.
 
 # Software development
 
-Most of the time I develop web applications. Thus I am able to create software
+Most of the time I develop web applications, thus I am able to create software
 using JavaScript, Ruby, Python, C and even a bit of Rust.
 
-I cannot decide between one of them, so I work with [Ruby on Rails][rails] and
-[Django][django] - depends on the project. I know rails and I'm concerned about
-my privacy. That's why I really like the [Diaspora\* project][diaspora] and so
-I am also work there a bit.
+When developing larger web application, I usually work with [Ruby on
+Rails][rails]. I tend to build web applications with large portions of their
+logic on the client and some of those applications are backed by
+[Node.js][node]. Since I do know Rails and I'm concerned about my privacy, I
+really like the [Diaspora\* project][diaspora] where I am one of the core
+developers who contributed to the project back in the beginning in 2010.
 
 There is a [dedicated page about my projects][projects] and I suggest that you
 check it out if you want to learn more about who I am and what I work on. Do not
@@ -49,9 +51,9 @@ past.
 
 [contact]: /contact.html
 [diaspora]: https://github.com/diaspora/diaspora
-[django]: https://www.djangoproject.com/
 [flickr]: http://www.flickr.com/photos/denschub/sets/
 [github]: https://github.com/denschub
+[nodejs]: https://nodejs.org/
 [projects]: /projects.html
 [rails]: http://rubyonrails.org/
 [wes]: https://www.weber-ebusiness.de/
