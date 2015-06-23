@@ -32,7 +32,7 @@ using JavaScript, Ruby, Python, C and even a bit of Rust.
 When developing larger web application, I usually work with [Ruby on
 Rails][rails]. I tend to build web applications with large portions of their
 logic on the client and some of those applications are backed by
-[Node.js][node]. Since I do know Rails and I'm concerned about my privacy, I
+[Node.js][nodejs]. Since I do know Rails and I'm concerned about my privacy, I
 really like the [Diaspora\* project][diaspora] where I am one of the core
 developers who contributed to the project back in the beginning in 2010.
 
