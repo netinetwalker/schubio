@@ -39,18 +39,13 @@ check it out if you want to learn more about who I am and what I work on. Do not
 hesitate to [contact me][contact] if you have any questions or if you want to
 get in touch with me.
 
-# Curriculum vitae
+I gained a lot of professional experience in web development during my
+employment as software engineer at a [small but nice web agency][wes] in
+southern Germany where I started in 2010.
 
-Incomplete. Inaccurate. [Ask me][contact] if you want to know more.
-
-* **06/2013 - present**: Software engineer at [Weber eBusiness Services
-  GmbH][wes].
-* **08/2010 - 06/2013**: Job training (specialised computer scientist for
-  software development) at [Weber eBusiness Services GmbH][wes].
-* **09/2006 - 07/2010**: Ludwig Uhland-Realschule Tuttlingen (junior high
-  school)
-* **09/2004 - 07/2006**: Immanuel Kant-Gymnasium Tuttlingen (high school)
-* **09/2000 - 07/2004**: Schrotenschule Tuttlingen (elementary school)
+This profile is not complete, so please [ask me][contact] if you want to know
+more about my professional experience and other projects I have done in the
+past.
 
 [contact]: /contact.html
 [diaspora]: https://github.com/diaspora/diaspora
