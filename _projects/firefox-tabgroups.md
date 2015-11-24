@@ -1,7 +1,7 @@
 ---
 title: firefox-tabgroups
 notable: true
-infolink: https://github.com/denschub/firefox-tabgroups
+infolink: https://github.com/denschub/firefox-tabgroups/blob/develop/README.md
 sourcelink: https://github.com/denschub/firefox-tabgroups
 ---
 
